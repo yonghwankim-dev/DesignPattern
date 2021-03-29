@@ -1,0 +1,16 @@
+package chapter02_객체지향원리.ch02_72p;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyStack<String> st = new MyStack<String>();
+		
+		st.push("insang1");
+		st.push("insang2");
+		st.set(0, "insang3");	//허용되어서는 안됨
+		System.out.println(st.pop());
+		System.out.println(st.pop());
+	}
+
+}

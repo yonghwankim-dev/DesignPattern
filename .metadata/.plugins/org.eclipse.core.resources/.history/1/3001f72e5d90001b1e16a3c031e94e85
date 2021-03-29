@@ -1,0 +1,10 @@
+package chapter02_객체지향원리.ch02_101p;
+
+public class TodayEvent extends DiscountMode{
+
+	@Override
+	public double getDisCountRate() {
+		// TODO Auto-generated method stub
+		return 0.3;
+	}
+}

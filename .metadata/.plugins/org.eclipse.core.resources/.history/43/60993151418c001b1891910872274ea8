@@ -1,0 +1,27 @@
+package chapter01_°´Ã¼ÁöÇâ¸ðµ¨¸µ.ch01_31p;
+
+import java.util.Vector;
+
+public class Course
+{
+	private String name;
+	private Vector<Transcript> transcripts;
+	
+	public Course(String name)
+	{
+		this.name = name;
+		transcripts = new Vector<Transcript>();
+	}
+	
+	public void addTranscript(Transcript transcript) {
+		// TODO Auto-generated method stub
+		transcripts.add(transcript);
+	}
+
+	public String getName()
+	{
+		return this.name;
+	}
+
+	
+}

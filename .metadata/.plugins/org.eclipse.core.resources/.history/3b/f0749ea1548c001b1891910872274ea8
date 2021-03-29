@@ -1,0 +1,14 @@
+package chapter01_°´Ã¼ÁöÇâ¸ðµ¨¸µ.ch01_27p_02;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Professor hongGilDong = new Professor();
+		Student manSup = new Student();
+		hongGilDong.setStudent(manSup);
+		hongGilDong.advise();
+		
+	}
+
+}

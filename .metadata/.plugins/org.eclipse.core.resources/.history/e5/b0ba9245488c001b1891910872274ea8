@@ -1,0 +1,11 @@
+package chapter01_°´Ã¼ÁöÇâ¸ğµ¨¸µ.ch01_39p;
+
+public class Person {
+	private Car car;
+	
+	
+	public class Car
+	{
+		
+	}
+}

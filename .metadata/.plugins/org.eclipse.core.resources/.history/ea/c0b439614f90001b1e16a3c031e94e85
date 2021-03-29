@@ -1,0 +1,42 @@
+package chapter02_객체지향원리.ch02_66p;
+
+import java.util.ArrayList;
+
+public class ArrayListStack {
+	public int stackSize;
+	public ArrayList<Integer> items;	// 자료구조가 배열에서 ArrayList로 변경됨
+	
+	public ArrayListStack(int stackSize)
+	{
+		items = new ArrayList<Integer>(stackSize);
+		this.stackSize = stackSize;
+	}
+	
+	public boolean isEmpty()
+	{
+		return items.isEmpty();
+	}
+	
+	public boolean isFull()
+	{
+		return (items.size()>=stackSize);
+	}
+	
+	public void push(int item)
+	{
+		if(isFull())
+		{
+			System.out.println("Inserting fail");
+		}
+		else
+		{
+			items.add(item);
+			System.out.println("Inserted Item : " + item);
+		}
+	}
+	
+	public int pop()
+	{
+		
+	}
+}

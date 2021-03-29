@@ -1,0 +1,48 @@
+package chapter01_°´Ã¼ÁöÇâ¸ðµ¨¸µ.ch01_28p;
+
+import java.util.Vector;
+
+public class Student {
+	private String name;
+	private Vector<Course> cources;
+	
+	
+	
+	public Student(String name) {
+		this.name = name;
+		cources = new Vector<Course>();
+	}
+
+	public void registerCourse(Course cource)
+	{
+		cources.add(cource);
+	}
+	
+	public void dropCourse(Course cource)
+	{
+		if(cources.contains(cource))
+		{
+			cources.remove(cource);
+		}
+	}
+	
+	public Vector<Course> getCources()
+	{
+		return cources;
+	}
+	
+	public class Course
+	{
+		private String name;
+		
+		public Course(String name)
+		{
+			this.name = name;
+		}
+		
+		public String getName()
+		{
+			return this.name;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package chapter02_객체지향원리.ch02_88p_01;
+
+public class Role {
+
+}
+
+class Driver extends Role{
+	
+}
+class Server extends Role{
+	
+}

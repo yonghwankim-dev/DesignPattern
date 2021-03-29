@@ -1,0 +1,17 @@
+package chapter02_객체지향원리.ch02_75p;
+
+import java.util.Vector;
+
+public class VectorStack extends Vector<String>{
+	private Vector<String> v = this;
+	
+	public void push(String element) 
+	{
+		v.add(element);
+	}
+	
+	public String pop()
+	{
+		return v.remove(v.size()-1);
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="chapter01.Person"/>
+    <fullyQualifiedTypeName name="chapter01.Professor"/>
+    <fullyQualifiedTypeName name="chapter01.Fig01_14.Student"/>
+    <fullyQualifiedTypeName name="chapter01.Fig01_14.Course"/>
+    <fullyQualifiedTypeName name="chapter01.Fig01_14.Transcript"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_28p.Course"/>
+    <fullyQualifiedTypeName name="sun.tools.jconsole.Tab"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_31p.Student"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_31p.Course"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_31p.Transcript"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_35p.HomeAppliancies"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Flow.Processor"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_27p_02.Professor"/>
+    <fullyQualifiedTypeName name="chapter01_객체지향모델링.ch01_27p_02.Student"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_66p.ArrayListStack"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_68p.ArrayListStack"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_72p.MyStack"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_84p.Animal"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_84p.Cat"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_84p.Snake"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_88p_02.Driver"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_88p_02.Worker"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_99p.CartForSongs"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_99p_solution.DiscountMode"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_99p_solution.NonDiscounted"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_99p_solution.TodayEvent"/>
+    <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_101p.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+</qualifiedTypeNameHistroy>

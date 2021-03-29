@@ -1,0 +1,11 @@
+package chapter02_객체지향원리.ch02_99p;
+
+public class Worker extends Role{
+
+	@Override
+	public void doIt() {
+		// TODO Auto-generated method stub
+		System.out.println("Working");
+	}
+
+}

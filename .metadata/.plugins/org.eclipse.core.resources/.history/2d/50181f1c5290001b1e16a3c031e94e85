@@ -1,0 +1,6 @@
+package chapter02_객체지향원리.ch02_84p;
+
+public abstract class Animal {
+	public abstract void printName();
+	
+}

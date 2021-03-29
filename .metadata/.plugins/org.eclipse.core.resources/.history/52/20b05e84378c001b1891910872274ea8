@@ -1,0 +1,25 @@
+package chapter01_°´Ã¼ÁöÇâ¸ðµ¨¸µ.ch01_28p;
+
+import java.util.Vector;
+
+public class Student {
+	private String name;
+	private Vector<Course> cources;
+	
+	
+	
+	public Student(String name) {
+		this.name = name;
+		cources = new Vector<Course>();
+	}
+
+	public void registerCourse(Course cource)
+	{
+		cources.add(cource);
+	}
+	
+	public void dropCourse(Course c)
+	{
+		
+	}
+}
