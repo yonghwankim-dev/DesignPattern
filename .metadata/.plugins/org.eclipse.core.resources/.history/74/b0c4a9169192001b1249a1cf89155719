@@ -1,0 +1,25 @@
+package chapter03_SOLID¿øÄ¢.ch03_115p;
+
+import java.util.Calendar;
+
+public class FakeTimeProvider implements TimeProvider{
+	private Calendar cal;
+	
+	public FakeTimeProvider() {
+		// TODO Auto-generated constructor stub
+		cal = Calendar.getInstance();
+	}
+	
+	@Override
+	public void setHours(int hours) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

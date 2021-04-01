@@ -32,4 +32,11 @@
     <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_99p_solution.TodayEvent"/>
     <fullyQualifiedTypeName name="chapter02_객체지향원리.ch02_101p.Queue"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_114p.FuelTankMonitoring"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_115p.MP3"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_115p.TimeProvider"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_115p.TimeReminder"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_115p.FakeTimeProvider"/>
+    <fullyQualifiedTypeName name="chapter03_SOLID원칙.ch03_123p.Kid"/>
 </qualifiedTypeNameHistroy>

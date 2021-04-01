@@ -1,0 +1,6 @@
+package chapter03_SOLID¿øÄ¢.ch03_123p;
+
+public interface TimeProvider {
+	public void setHours(int hours);
+	public int getTime();
+}

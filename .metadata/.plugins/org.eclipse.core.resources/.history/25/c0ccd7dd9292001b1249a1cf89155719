@@ -1,0 +1,13 @@
+package chapter03_SOLID¿øÄ¢.ch03_123p;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Robot t = new Robot();
+		Kid k = new Kid();
+		k.setToy(t);
+		k.play();
+	}
+
+}
