@@ -42,4 +42,14 @@
     <fullyQualifiedTypeName name="chapter04_디자인패턴.ch04_01.Z"/>
     <fullyQualifiedTypeName name="chapter04_디자인패턴.ch04_02.A2"/>
     <fullyQualifiedTypeName name="chapter04_디자인패턴.ch04_02.A3"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_01.Robot"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.MovingStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.MovingStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.attack.AttackStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.attack.MissileStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.WalkingStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.FlyingStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.attack.PunchStrategy"/>
 </qualifiedTypeNameHistroy>
