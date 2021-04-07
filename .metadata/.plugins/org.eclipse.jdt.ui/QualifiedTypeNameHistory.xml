@@ -52,4 +52,11 @@
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.WalkingStrategy"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.FlyingStrategy"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.attack.PunchStrategy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.Member"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.Book"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.strategy.PricePolicy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.Rental"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.strategy.OrdinaryPricePolicy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.strategy.BookDiscountPricePolicy"/>
+    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_04.strategy.MemberDiscountPricePolicy"/>
 </qualifiedTypeNameHistroy>
