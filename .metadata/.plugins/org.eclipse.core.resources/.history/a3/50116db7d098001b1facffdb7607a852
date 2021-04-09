@@ -1,0 +1,5 @@
+package chapter06_싱글턴패턴.ch06_01;
+
+public class User {
+
+}

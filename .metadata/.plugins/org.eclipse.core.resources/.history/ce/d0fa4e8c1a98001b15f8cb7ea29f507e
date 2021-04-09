@@ -1,0 +1,9 @@
+package chapter05_스트래티지패턴.ch05_06;
+
+public class Client {
+	public static void main(String args[])
+	{
+		Field field = new Field();
+		
+	}
+}

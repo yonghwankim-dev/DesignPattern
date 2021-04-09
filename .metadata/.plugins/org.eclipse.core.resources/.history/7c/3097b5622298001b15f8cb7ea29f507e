@@ -1,0 +1,8 @@
+package chapter05_스트래티지패턴.ch05_07;
+
+public class Client {
+	public static void main(String args[])
+	{
+		Item item1 = new Item("Shampoo",3000);
+	}
+}

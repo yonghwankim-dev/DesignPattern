@@ -1,0 +1,40 @@
+package chapter05_스트래티지패턴.ch05_06;
+
+import java.awt.BorderLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Field extends JPanel implements Runnable{
+	private JLabel lbl;
+	private String[] walkingImage = {"run1.gif","run2.gif","run3.gif"};
+	
+	public Field() {
+		setLayout(new BorderLayout());
+		lbl = new JLabel();
+		lbl.setIcon(new ImageIcon("./src/walk1.gif"));
+		add(lbl, BorderLayout.CENTER);
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true)
+		{
+			String[] path = walkingImage;
+			for(int i=0; i<path.length;i++)
+			{
+				lbl.setIcon(new ImageIcon("./src/"+path[i]));
+				try {
+					Thread.sleep(300);
+					
+				}catch(InterruptedException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+}

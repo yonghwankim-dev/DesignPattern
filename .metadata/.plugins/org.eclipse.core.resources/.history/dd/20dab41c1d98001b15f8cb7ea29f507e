@@ -1,0 +1,31 @@
+package chapter05_스트래티지패턴.ch05_06.strategy;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+public class RunningStrategy extends MovingStrategy{
+	private String[] runningImage = {"run1.gif","run2.gif","run3.gif"};
+	
+	@Override
+	public void drawImages(JLabel lbl) {
+		// TODO Auto-generated method stub
+		lbl.setIcon(new ImageIcon("./src/run1.gif"));
+		while(true)
+		{
+			String[] path = runningImage;
+			for(int i=0;i<path.length;i++)
+			{
+				lbl.setIcon(new ImageIcon("./src/"+path[i]));
+				try
+				{
+					Thread.sleep(100);
+					
+				}catch (InterruptedException e) {
+					// TODO: handle exception
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+}
