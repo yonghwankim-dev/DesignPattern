@@ -1,0 +1,9 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_10;
+
+public class ServerFactory {
+	public Server getServer() 
+	{
+		
+		return new ServerProxy();
+	}
+}

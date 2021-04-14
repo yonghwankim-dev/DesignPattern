@@ -1,0 +1,5 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_10;
+
+public interface Server {
+	public void doSomeThing();
+}

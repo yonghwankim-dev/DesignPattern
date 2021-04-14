@@ -1,0 +1,31 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_09;
+
+public class PrinterManager {
+	private static PrinterManager mgr = null;
+	private Printer[] printers;
+	public PrinterManager()
+	{
+		printers = new Printer[3];
+	}
+	
+	public synchronized static PrinterManager getPrinterManager() {
+		// TODO Auto-generated method stub
+		if(mgr==null)
+		{
+			mgr = new PrinterManager();
+		}
+		return mgr;
+	}
+
+	public Printer getPrinter() {
+		// TODO Auto-generated method stub
+		
+			for(Printer p : printers)
+			{
+				if(p.isAvailable())
+				{
+					return p;
+				}
+			}	
+	}
+}

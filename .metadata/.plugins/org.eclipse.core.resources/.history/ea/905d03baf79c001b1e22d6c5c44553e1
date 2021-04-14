@@ -1,0 +1,5 @@
+package chapter06_싱글턴패턴.ch06_07;
+
+public class Printer {
+
+}

@@ -1,0 +1,24 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_07;
+
+public class Singleton {
+	private Singleton instance = null;
+	
+	public Printer()
+	{
+		
+	}
+	
+	public static Singleton getInstance()
+	{
+		if(instance==null)
+		{
+			printer = new Singleton();
+		}
+		return instance;
+	}
+	
+	public void doSomething(void)
+	{
+		//...
+	}
+}

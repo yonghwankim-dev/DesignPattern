@@ -1,0 +1,16 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_09;
+
+public class Printer {
+	private static int counter = 0;
+	
+	private Printer()
+	{
+		
+	}
+	
+	public synchronized static void print(String str)
+	{
+			counter++;
+			System.out.println(str+counter);
+	}
+}
