@@ -1,0 +1,39 @@
+package chapter07_스테이트패턴.ch07_05.state;
+
+import chapter07_스테이트패턴.ch07_05.VendingMachine;
+
+public class NoMoneyState implements State {
+	private VendingMachine machine;
+	public NoMoneyState(VendingMachine machine)
+	{
+		this.machine = machine;
+	}
+	
+	@Override
+	public void insertCoin(int money) {
+		// TODO Auto-generated method stub
+		machine.getMoneyBox().insert(money);
+		System.out.println(money + "원을 넣었습니다.");
+		
+		// 돈이 전혀 투입되지 않은 상태에서 음료를 사기에 충분한 돈을 투입한 경우
+		if(money >= machine.getDrinking().getPrice())
+		{
+			machine.setState(machine.getEnoughMoneyState());	// EnoughMoney 상태로 변경
+		}
+		else
+		{
+			
+		}
+		
+	}
+	@Override
+	public void pushButton(int price) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void returnCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,31 @@
+package chapter07_스테이트패턴.ch07_03;
+
+public class OFF implements State{
+	private static OFF off = new OFF();
+	
+	public OFF()
+	{
+		
+	}
+	
+	public static State getInstance() {
+		// TODO Auto-generated method stub
+		return off;
+	}
+	
+	@Override
+	public void on_button_pushed(Light light) {
+		// TODO Auto-generated method stub
+		System.out.println("Light On");
+		light.setState(new ON(light));
+	}
+
+	@Override
+	public void off_button_pushed(Light light) {
+		// TODO Auto-generated method stub
+		System.out.println("반응 없음");
+	}
+
+	
+
+}

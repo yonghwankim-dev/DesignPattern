@@ -1,0 +1,28 @@
+package chapter07_스테이트패턴.ch07_05.state;
+
+import chapter07_스테이트패턴.ch07_05.VendingMachine;
+
+public class NoMoneyState implements State {
+	private VendingMachine machine;
+	public NoMoneyState(VendingMachine machine)
+	{
+		this.machine = machine;
+	}
+	
+	@Override
+	public void insertCoin(int money) {
+		// TODO Auto-generated method stub
+		machine.getMoneyBox().insert(money);
+		
+	}
+	@Override
+	public void pushButton(int price) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void returnCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,14 @@
+package chapter07_스테이트패턴.ch07_01;
+
+public class Light {
+	private static int ON = 0;	// 형광등이 켜진 상태
+	private static int OFF = 1;	// 형광등이 꺼진 상태
+	private int state;			// 형광등의 현재 상태
+	
+	public Light() {
+		this.state = OFF;
+	}
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package chapter07_스테이트패턴.ch07_05.state;
+
+import chapter07_스테이트패턴.ch07_05.VendingMachine;
+
+public class EnoughMoneyState implements State {
+	private VendingMachine machine;
+	
+	public EnoughMoneyState(VendingMachine machine)
+	{
+		this.machine = machine;
+	}
+}
