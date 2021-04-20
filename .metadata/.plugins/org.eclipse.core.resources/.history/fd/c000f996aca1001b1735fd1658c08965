@@ -1,0 +1,13 @@
+package chapter08_커맨드패턴.ch08_04.command;
+
+public class LampOnCommand implements Command{
+	private Lamp theLamp;
+	
+	
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

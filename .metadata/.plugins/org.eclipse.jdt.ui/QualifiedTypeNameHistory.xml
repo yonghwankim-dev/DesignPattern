@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.BallFrame"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.Ball"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.strategy.direction.VerticalMoveStrategy"/>
-    <fullyQualifiedTypeName name="javax.tools.DiagnosticCollector"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.strategy.direction.DiagonalMoveStrategy"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_06.strategy.Running"/>
-    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
-    <fullyQualifiedTypeName name="sun.awt.windows.WLightweightFramePeer"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.MovingStrategy"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_03.strategy.moving.WalkingStrategy"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_06.strategy.MovingStrategy"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_06.strategy.WalkingStrategy"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_06.Running"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_06.strategy.RunningStrategy"/>
@@ -60,4 +45,19 @@
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.NoEnoughMoneyState"/>
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.EnoughMoneyState"/>
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.VendingMachine"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_01.Lamp"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_01.Button"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_03.Lamp"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_03.Mode"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_04.command.LampOnCommand"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_04.command.Command"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_04.command.Alarm"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_04.command.AlarmStartCommand"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_05.command.Lamp"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_05.command.LampOnCommand"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_05.command.LampOffCommand"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_05.Button"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_05.command.Command"/>
 </qualifiedTypeNameHistroy>
