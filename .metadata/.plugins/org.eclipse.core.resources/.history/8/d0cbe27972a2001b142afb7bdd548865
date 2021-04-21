@@ -1,0 +1,26 @@
+package chapter08_커맨드패턴.ch08_08;
+
+import chapter08_커맨드패턴.ch08_07.command.Command;
+import chapter08_커맨드패턴.ch08_07.command.MuteCommand;
+import chapter08_커맨드패턴.ch08_07.command.PowerCommand;
+import chapter08_커맨드패턴.ch08_07.command.TV;
+import chapter08_커맨드패턴.ch08_08.command.DestinationSelectionCommand;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ElevatorController controller1 = new ElevatorController(1);
+		ElevatorController controller2 = new ElevatorController(2);
+		
+		ElevatorManager em = new ElevatorManager(2);
+		em.addController(controller1);
+		em.addController(controller2);
+		
+		// 1번 엘리베이터를 1층에 위치시키려는 목적의 목적지 층 버튼
+		Command destinationCommand1stController =
+				new DestinationSelectionCommand(1, controller1);
+		
+	}
+
+}

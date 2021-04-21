@@ -1,0 +1,5 @@
+package chapter08_커맨드패턴.ch08_07;
+
+public interface Command {
+
+}

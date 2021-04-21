@@ -1,0 +1,33 @@
+package chapter08_커맨드패턴.ch08_08;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import chapter08_커맨드패턴.ch08_08.command.Direction;
+
+
+
+public class ElevatorManager {	// 복수 개의 엘리베이터를 관리하는 클래스
+	private List<ElevatorController> controllers;
+
+	public ElevatorManager(int controllerCount) {
+		controllers = new ArrayList<ElevatorController>(controllerCount);
+	}
+	
+	// ElevatorController 객체를 추가함
+	public void addController(ElevatorController controller)
+	{
+		controllers.add(controller);
+	}
+	
+	public void requestElevator(int destination, Direction direction)
+	{
+		// 적절한 엘리베이터를 선택함
+		selectElevator(destination, direction);
+	}
+	
+	private int selectElevator(int destination, Direction direction)
+	{
+		return 0;
+	}
+}

@@ -1,0 +1,5 @@
+package chapter08_커맨드패턴.ch08_08;
+
+public class Direction {
+	public static final enum direction {UP, DOWN};
+}

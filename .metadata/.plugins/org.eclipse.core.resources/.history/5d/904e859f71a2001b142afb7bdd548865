@@ -1,0 +1,18 @@
+package chapter08_커맨드패턴.ch08_08;
+
+import chapter08_커맨드패턴.ch08_08.command.Command;
+
+public class ElevatorButton {
+	private Command command;
+
+	// DestinationSelectionCommand 또는 ElevatorRequestCommand 객체가 주어짐
+	public ElevatorButton(Command command) {
+		this.command = command;
+	}
+	
+	public void pressed()	// 버튼이 눌리면 주어진 command의 execute를 호출한다.
+	{
+		command.execute();
+	}
+	
+}

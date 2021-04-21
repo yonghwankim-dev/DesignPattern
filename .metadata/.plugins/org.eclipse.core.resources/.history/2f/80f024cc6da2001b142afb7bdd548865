@@ -1,0 +1,18 @@
+package chapter08_커맨드패턴.ch08_08;
+
+public class ElevatorManager {
+	private ElevatorController[] controllers;
+
+	public ElevatorManager(int controllerCount) {
+		controllers = new ElevatorController[controllerCount];
+		int id = 1;
+		for(ElevatorController e : controllers)
+		{
+			e = new ElevatorController(id++);
+			
+		}
+	}
+	
+	
+	
+}
