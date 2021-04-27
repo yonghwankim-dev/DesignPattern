@@ -1,0 +1,19 @@
+package chapter09_옵서버패턴.ch09_01;
+
+public class DataSheetView {
+	private ScoreRecord scoreRecord;
+	private int viewCount;
+	
+	public DataSheetView(ScoreRecord scoreRecord, int viewCount) {
+		this.scoreRecord = scoreRecord;
+		this.viewCount = viewCount;
+	}
+
+
+
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

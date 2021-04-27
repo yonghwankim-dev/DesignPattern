@@ -1,0 +1,6 @@
+package chapter09_옵서버패턴.ch09_04.observer;
+
+public abstract class Subject {	// 추상화된 변경 관심 대상 데이터
+	
+	
+}

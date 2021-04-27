@@ -1,0 +1,17 @@
+package chapter09_옵서버패턴.ch09_07;
+
+public class ControlRoomDisplay implements Observer{
+	private ElevatorController controller;
+	
+	public ControlRoomDisplay(ElevatorController controller) {
+		this.controller = controller;
+	}
+
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

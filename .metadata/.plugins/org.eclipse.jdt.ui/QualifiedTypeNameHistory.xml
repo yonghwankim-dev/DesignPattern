@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_08.NormalTicket"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_08.NullTicket"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_08.TicketManager"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_08.UserThread"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_09.PrinterManager"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_09.Printer"/>
-    <fullyQualifiedTypeName name="com.sun.jmx.remote.protocol.rmi.ServerProvider"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.ServerProxy"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.Server"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.ServerFactory"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.ServerProvider"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.UseServer"/>
-    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.ch06_10.FakeServer"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_01.Light"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_03.State"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_04.SLEEPING"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.State"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.SoldOutState"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.MoneyBox"/>
-    <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.Drinking"/>
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.NoMoneyState"/>
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.NoEnoughMoneyState"/>
     <fullyQualifiedTypeName name="chapter07_스테이트패턴.ch07_05.state.EnoughMoneyState"/>
@@ -50,8 +27,6 @@
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.command.Command"/>
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.command.MuteCommand"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.loop.InductionVariable.Direction"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.strategy.direction.DirectionStrategy"/>
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorController"/>
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorManager"/>
@@ -60,4 +35,29 @@
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.ElevatorRequestCommand"/>
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.Direction"/>
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorButton"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_01.ScoreRecord"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_01.DataSheetView"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_02.ScoreRecord"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_02.MinMaxView"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_03.MinMaxView"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_03.DataSheetView"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_04.observer.Subject"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_04.observer.Observer"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_05.Battery"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_05.BatteryLevelDisplay"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_05.LowBatteryWarning"/>
+    <fullyQualifiedTypeName name="com.sun.swing.internal.plaf.basic.resources.basic"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Battery"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Observer"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Subject"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.Subject"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.Observer"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.ElevatorController"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.ElevatorDisplay"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.VoiceNotice"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.FloorDisplay"/>
+    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.ControlRoomDisplay"/>
 </qualifiedTypeNameHistroy>

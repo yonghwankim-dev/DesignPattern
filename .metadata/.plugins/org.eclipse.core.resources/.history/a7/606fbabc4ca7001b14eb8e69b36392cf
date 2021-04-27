@@ -1,0 +1,9 @@
+package chapter09_옵서버패턴.ch09_06;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Subject {
+	private List<Observer> observers = new ArrayList<Observer>();
+	
+}
