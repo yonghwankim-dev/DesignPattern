@@ -1,0 +1,7 @@
+package chapter11_템플릿메서드패턴.ch11_05;
+
+import java.util.List;
+
+public class SimpleReportGenerator extends ReportGenerator{
+
+}

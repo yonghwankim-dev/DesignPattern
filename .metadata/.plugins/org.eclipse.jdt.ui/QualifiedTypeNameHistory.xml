@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.command.TV"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.TwoButtonController"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.command.Command"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_07.command.MuteCommand"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.loop.InductionVariable.Direction"/>
-    <fullyQualifiedTypeName name="chapter05_스트래티지패턴.ch05_05.strategy.direction.DirectionStrategy"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorController"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorManager"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.DestinationSelectionCommand"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.Command"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.ElevatorRequestCommand"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.Direction"/>
-    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.ElevatorButton"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_01.ScoreRecord"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_01.DataSheetView"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_02.ScoreRecord"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_02.MinMaxView"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_03.MinMaxView"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_03.DataSheetView"/>
@@ -27,8 +13,6 @@
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_05.LowBatteryWarning"/>
     <fullyQualifiedTypeName name="com.sun.swing.internal.plaf.basic.resources.basic"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Battery"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Observer"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_06.Subject"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.Subject"/>
@@ -60,4 +44,20 @@
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_06.BasicCar"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_06.CarComponent"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_06.AirBagDecorator"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_01.DoorStatus"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_01.MotorStatus"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_01.HyundaiMotor"/>
+    <fullyQualifiedTypeName name="chapter08_커맨드패턴.ch08_08.command.Direction"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_01.Direction"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_03.MotorStatus"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_04.Direction"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_05.SimpleReportGenerator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_05.Customer"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_05.ReportGenerator"/>
+    <fullyQualifiedTypeName name="chapter11_템플릿메서드패턴.ch11_05.ComplexReportGenerator"/>
 </qualifiedTypeNameHistroy>

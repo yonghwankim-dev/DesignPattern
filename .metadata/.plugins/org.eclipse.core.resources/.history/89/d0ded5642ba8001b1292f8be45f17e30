@@ -1,0 +1,15 @@
+package chapter11_템플릿메서드패턴.ch11_05;
+
+public class Customer {
+	private String name;
+	private int point;
+	
+	public Customer(String name, int point) {	
+		this.name = name;
+		this.point = point;
+	}
+	
+	
+	
+	
+}

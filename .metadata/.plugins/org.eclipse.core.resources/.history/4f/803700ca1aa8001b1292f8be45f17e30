@@ -1,0 +1,12 @@
+package chapter11_템플릿메서드패턴.ch11_01;
+
+public class HyundaiMotor {
+	private Door door;
+	private MotorStatus motorStatus;
+	public HyundaiMotor(Door door) {
+		this.door = door;
+		motorStatus = MotorStatus.STOPPED;
+	}
+	
+	
+}
