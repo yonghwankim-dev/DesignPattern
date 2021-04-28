@@ -1,0 +1,19 @@
+package chapter10_데커레이터패턴.ch10_06;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CarComponent car = new BasicCar(1000);
+		System.out.println("price : " + car.getPrice() + " Carinfo : " + car.getCarinfo());
+		
+		for(String decoratorName: args)
+		{
+			if(decoratorName.equalsIgnoreCase("AirBag"))
+			{
+				CarComponent car = new AirBagDecorator(car, 100);
+			}
+		}
+	}
+
+}

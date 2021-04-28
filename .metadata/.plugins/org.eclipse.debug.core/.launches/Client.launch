@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/DesignPattern/src/chapter05_스트래티지패턴/ch05_01/Client.java"/>
+        <listEntry value="/DesignPattern/src/chapter10_데커레이터패턴/ch10_03/Client.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
-    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="chapter05_스트래티지패턴.ch05_01.Client"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="chapter10_데커레이터패턴.ch10_03.Client"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="Lane Traffic Crossing"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="DesignPattern"/>
 </launchConfiguration>

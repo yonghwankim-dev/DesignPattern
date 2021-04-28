@@ -1,6 +1,0 @@
-package chapter08_커맨드패턴.ch08_06;
-
-public class TwoButtonController {
-	private TV tv;
-	
-}
