@@ -1,0 +1,18 @@
+package chapter12_팩토리메서드패턴.ch12_01;
+
+public class ElevatorController {
+	private int id;
+	private int curFloor;
+	
+	public ElevatorController(int id) {
+		this.id = id;
+		curFloor = 1;
+	}
+	
+	public void gotoFloor(int destination)
+	{
+		System.out.printf("Elevator [%d] Floor: %d", id,curFloor);
+		this.curFloor = destination;
+	}
+	
+}
