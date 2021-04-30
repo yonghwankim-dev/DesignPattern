@@ -1,0 +1,17 @@
+package chapter12_팩토리메서드패턴.ch12_06;
+
+import chapter12_팩토리메서드패턴.ch12_06.elevator.MotorStatus;
+
+public class ElevatorController {
+	private int id;
+	private int curFloor = 1;
+	private MotorStatus motor;
+	
+	
+	public ElevatorController(int id, Motor motor) {
+		this.id = id;
+		this.motor = motor;
+	}
+	
+	
+}

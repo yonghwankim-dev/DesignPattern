@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.FloorDisplay"/>
-    <fullyQualifiedTypeName name="chapter09_옵서버패턴.ch09_07.ControlRoomDisplay"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_01.RoadDisplay"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_01.RoadDisplayWithLane"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_02.DisplayDecorator"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_02.Display"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_02.TrafficDecorator"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_02.LaneDecorator"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_02.RoadDisplay"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_03.RoadDisplay"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_03.LaneDecorator"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_04.BasicEmailContent"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_04.ExternalEmailContent"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_04.SecureEmailContent"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.ContentDecorator"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.BasicEmailContent"/>
@@ -48,7 +35,6 @@
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_02.ElevatorManager"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_02.Direction"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_02.ElevatorScheduler"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_03.SchedulerStrategy.ResponseTimeScheduler"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_03.SchedulerStrategy.ThroughputScheduler"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_03.SchedulerStrategy.ElevatorScheduler"/>
@@ -57,7 +43,21 @@
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_03.SchedulerStrategy.ScheulingStrategyID"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_03.SchedulerStrategy.Direction"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_04.ElevatorManager"/>
-    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_04.SchedulerStrategy.ElevatorScheduler"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_04.SchedulerStrategy.ResponseTimeScheduler"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_04.SchedulerStrategy.ThroughputScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_04.SchedulerStrategy.ElevatorScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_05.SchedulerStrategy.Direction"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_05.SchedulerStrategy.ElevatorScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_05.ElevatorManager"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_05.SchedulerStrategy.ResponseTimeScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_05.SchedulerStrategy.ThroughputScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.elevator.MotorStatus"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.elevator.Direction"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.Motor"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.ElevatorController"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.LGMotor"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.HyundaiMotor"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.MotorFactory"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.elevator.MotorVendorID"/>
 </qualifiedTypeNameHistroy>
