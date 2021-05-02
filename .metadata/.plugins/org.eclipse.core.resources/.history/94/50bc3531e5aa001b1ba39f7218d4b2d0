@@ -1,0 +1,23 @@
+package chapter12_팩토리메서드패턴.ch12_07;
+
+public class Car {
+	private int speed;
+	private CarState normalState;
+	private CarState limpState;
+	private CarState curState;
+	
+	public Car()
+	{
+		
+	}
+	
+	public CarState getLimpMode()
+	{
+		return limpState;
+	}
+	
+	public void setState(CarState state)
+	{
+		this.curState = state;
+	}
+}

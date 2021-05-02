@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_04.SecureEmailContent"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.ContentDecorator"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.BasicEmailContent"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.ExternalEmailContent"/>
-    <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.SecureEmailContent"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.EMailContent"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_05.SecureDecorator"/>
     <fullyQualifiedTypeName name="chapter10_데커레이터패턴.ch10_06.CarOptionDecorator"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.HyundaiMotor"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.motor.MotorFactory"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_06.elevator.MotorVendorID"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_07.CarState"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_08.CarStateID"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_08.NormalState"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_08.LimpState"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.ch12_08.CarStateFactory"/>
 </qualifiedTypeNameHistroy>

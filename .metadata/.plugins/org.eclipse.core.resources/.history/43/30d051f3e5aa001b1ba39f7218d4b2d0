@@ -1,0 +1,6 @@
+package chapter12_팩토리메서드패턴.ch12_07;
+
+public abstract class CarState {
+	protected Car car;
+	
+}
