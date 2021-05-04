@@ -1,0 +1,36 @@
+package chapter13_추상팩토리패턴.ch13_05.FACTORY;
+
+import chapter13_추상팩토리패턴.ch13_05.GPS.CheapGPS;
+import chapter13_추상팩토리패턴.ch13_05.GPS.GPS;
+import chapter13_추상팩토리패턴.ch13_05.MAP.Map;
+import chapter13_추상팩토리패턴.ch13_05.MAP.SmallMap;
+import chapter13_추상팩토리패턴.ch13_05.PATHFINDER.PathFinder;
+import chapter13_추상팩토리패턴.ch13_05.SCREEN.SDScreen;
+import chapter13_추상팩토리패턴.ch13_05.SCREEN.Screen;
+
+public class BasicNaviFactory extends NaviFactory{
+
+	@Override
+	public GPS createGPS() {
+		return new CheapGPS();
+	}
+
+	@Override
+	public Map createMap() {
+		// TODO Auto-generated method stub
+		return new SmallMap();
+	}
+
+	@Override
+	public Screen createScreen() {
+		// TODO Auto-generated method stub
+		return new SDScreen();
+	}
+
+	@Override
+	public PathFinder createPathFinder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

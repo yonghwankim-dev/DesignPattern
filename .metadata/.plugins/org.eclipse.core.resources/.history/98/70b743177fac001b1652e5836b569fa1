@@ -1,0 +1,8 @@
+package chapter13_추상팩토리패턴.ch13_05;
+
+public class CheapGPS extends GPS{
+	public Location findCurrentLocation()
+	{
+		
+	}
+}
