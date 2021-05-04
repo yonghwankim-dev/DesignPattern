@@ -1,0 +1,10 @@
+package chapter14_컴퍼지트패턴.ch14_04;
+
+import java.util.ArrayList;
+
+public class Directory {
+	private String name;
+	private int depth = 0;
+	private List<Object> entries = new ArrayList<E>();
+	
+}

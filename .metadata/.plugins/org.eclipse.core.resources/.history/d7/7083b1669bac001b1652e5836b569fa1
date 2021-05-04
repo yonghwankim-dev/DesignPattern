@@ -1,0 +1,5 @@
+package chapter14_컴퍼지트패턴.ch14_04;
+
+public class AbstractFile {
+
+}

@@ -1,0 +1,12 @@
+package chapter14_컴퍼지트패턴.ch14_01.computer;
+
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Body;
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Keyboard;
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Monitor;
+
+public class Computer {
+	private Keyboard keyboard;
+	private Body body;
+	private Monitor monitor;
+	
+}

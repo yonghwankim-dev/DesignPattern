@@ -1,0 +1,8 @@
+package chapter14_컴퍼지트패턴.ch14_04;
+
+public class AbstractFile {
+	private String name;
+	private int depth = 0;
+	
+	
+}

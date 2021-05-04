@@ -1,9 +1,0 @@
-package chapter09_옵서버패턴.ch09_01;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class ScoreRecord {
-	private List<Integer> scores = new ArrayList();	// 점수를 저장함
-	private DataSheetView dataSheetView;	// 목록 형태로 점수를 출력하는 클래스
-}

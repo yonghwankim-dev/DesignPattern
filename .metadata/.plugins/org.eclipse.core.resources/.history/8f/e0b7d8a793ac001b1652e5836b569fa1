@@ -1,0 +1,45 @@
+package chapter14_컴퍼지트패턴.ch14_03.computer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Body;
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Keyboard;
+import chapter14_컴퍼지트패턴.ch14_01.computer.part.Monitor;
+import chapter14_컴퍼지트패턴.ch14_02.computer.part.Speaker;
+import chapter14_컴퍼지트패턴.ch14_03.computer.computerDevice.ComputerDevice;
+
+public class Computer {
+	// 복수개의 ComputerDevice 객체를 가리킴
+	private List<ComputerDevice> components = new ArrayList<ComputerDevice>();
+	
+	public void addComponent(ComputerDevice component)
+	{
+		components.add(component);
+	}
+	
+	public void removeComponent(ComputerDevice component)
+	{
+		components.remove(component);
+	}
+	
+	
+	public int getPrice()
+	{
+		int bodyPrice = body.getPrice();
+		int keyboardPrice = keyboard.getPrice();
+		int monitorPrice = monitor.getPrice();
+		int speakerPrice = speaker.getPrice();
+		
+		return bodyPrice + keyboardPrice + monitorPrice + speakerPrice;
+	}
+	
+	public int getPower()
+	{
+		int bodyPower = body.getPower();
+		int keyboardPower = keyboard.getPower();
+		int monitorPower = monitor.getPower();
+		int speakerPower = speaker.getPower();
+		return bodyPower + keyboardPower + monitorPower + speakerPower;
+	}
+}

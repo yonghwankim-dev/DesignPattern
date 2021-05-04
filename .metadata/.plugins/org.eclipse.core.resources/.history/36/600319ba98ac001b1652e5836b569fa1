@@ -1,0 +1,14 @@
+package chapter14_컴퍼지트패턴.ch14_04;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Directory dir1 = new Directory("root");
+		Directory dir2 = new Directory("Dir1");
+		
+		File d1 = new File("f1",100);
+		
+	}
+
+}
