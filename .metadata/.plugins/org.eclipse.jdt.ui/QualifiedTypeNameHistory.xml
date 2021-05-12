@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_03.Door.HyundaiDoor"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_03.LGElevatorFactory"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_03.HyundaiElevatorFactory"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_03.ElevatorFactory"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_03.Motor.SamsungMotor"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_04.Directory"/>
     <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_04.AbstractFile"/>
+    <fullyQualifiedTypeName name="vehicle"/>
+    <fullyQualifiedTypeName name="vehicle2"/>
 </qualifiedTypeNameHistroy>

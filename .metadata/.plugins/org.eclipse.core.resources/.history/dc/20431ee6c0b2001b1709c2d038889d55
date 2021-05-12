@@ -1,0 +1,19 @@
+package chapter01_°´Ã¼ÁöÇâ¸ğµ¨¸µ.ch01_29p;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student std1 = new Student("È«±æµ¿");
+		Student std2 = new Student("±è¿µÈñ");
+		Student std3 = new Student("±èÃ¶¼ö");
+		
+		Course os = new Course("operating system");
+		Course ds = new Course("data struct");
+		Course java = new Course("java");
+		Course c = new Course("c");
+		
+		
+
+	}
+
+}

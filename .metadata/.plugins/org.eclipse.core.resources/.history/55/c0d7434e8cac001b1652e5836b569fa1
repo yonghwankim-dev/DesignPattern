@@ -1,5 +1,0 @@
-package chapter14_컴퍼지트패턴.ch14_01.computer.part;
-
-public class Keyboard {
-
-}

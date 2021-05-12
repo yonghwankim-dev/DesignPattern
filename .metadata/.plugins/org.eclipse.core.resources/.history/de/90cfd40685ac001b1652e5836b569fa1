@@ -1,6 +1,0 @@
-package chapter13_추상팩토리패턴.ch13_05.FACTORY;
-
-public abstract class NaviFactory {
-	public abstract GPS createGPS();
-	
-}

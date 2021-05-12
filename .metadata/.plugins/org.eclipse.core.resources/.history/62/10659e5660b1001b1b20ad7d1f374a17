@@ -1,0 +1,10 @@
+
+public class Car implements vehicle, vehicle2{
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

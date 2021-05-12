@@ -1,5 +1,0 @@
-package chapter13_추상팩토리패턴.ch13_01;
-
-public abstract class Door {
-	private DoorStatus doorStatus
-}

@@ -1,9 +1,0 @@
-package chapter14_컴퍼지트패턴.ch14_01.client;
-
-public class Client {
-
-	public static void main(String[] args) {
-		// 컴퓨터의 부품으로 
-	}
-
-}

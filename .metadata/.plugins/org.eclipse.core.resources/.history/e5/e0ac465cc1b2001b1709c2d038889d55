@@ -1,0 +1,13 @@
+package chapter01_°´Ã¼ÁöÇâ¸ðµ¨¸µ.ch01_39p;
+
+public class Person {
+	private Car owns;
+	
+	public Car getOwns() {
+		return owns;
+	}
+	public void setOwns(Car owns) {
+		this.owns = owns;
+	}
+	
+}

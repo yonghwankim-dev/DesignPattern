@@ -1,5 +1,0 @@
-package chapter13_추상팩토리패턴.ch13_05.PATHFINDER;
-
-public abstract class PathFinder {
-	public abstract Path findPath(Location from, Location to);
-}
