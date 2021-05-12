@@ -1,0 +1,15 @@
+package chapter03_SOLID¿øÄ¢.practice.p04_DIP_DependencyInversionPrinciple;
+
+public class Kid {
+	private Toy toy;
+	
+	public void setToy(Robot toy)
+	{
+		this.toy = toy;
+	}
+	
+	public void play()
+	{
+		System.out.println(toy.toString());
+	}
+}

@@ -1,0 +1,11 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex10.after;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PayGUI = new PayGUI(new DefaultStrategy());
+	}
+
+}

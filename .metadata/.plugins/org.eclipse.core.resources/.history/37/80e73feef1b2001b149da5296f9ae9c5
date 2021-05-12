@@ -1,0 +1,9 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex10.after;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.event.DocumentListener;
+
+public class PayGUI extends JFrame implements ActionListener, DocumentListener{
+
+}

@@ -1,0 +1,22 @@
+package chapter03_SOLID원칙.practice.p04_DIP_DependencyInversionPrinciple;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 아이 객체 생성
+		Kid kid = new Kid();
+		
+		// 로봇 장난감 객체 생성, 주입
+		Toy robot = new Robot();
+		kid.setToy(robot);
+		kid.play();
+		
+		// 레고 장난감 객체 생성, 주입
+		Toy lego = new Lego();
+		
+	}
+
+}
+
+// 문제점
+// 

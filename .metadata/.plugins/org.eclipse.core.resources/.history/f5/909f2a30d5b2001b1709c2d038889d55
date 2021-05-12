@@ -1,0 +1,5 @@
+package chapter03_SOLID¿øÄ¢.practice.p01_SRP_SingleResponsibilityPrinciple;
+
+public class Student {
+
+}

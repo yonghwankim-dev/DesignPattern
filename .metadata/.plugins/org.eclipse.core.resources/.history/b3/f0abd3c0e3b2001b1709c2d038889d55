@@ -1,0 +1,6 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex04;
+
+public class Employee {
+	private String id;
+	
+}

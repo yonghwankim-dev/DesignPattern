@@ -1,0 +1,20 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex07.before;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PayrollManager pm = new PayrollManager();
+		
+		Employee e1 = new Employee("gildongHong", "È«±æµ¿", 40, 10);
+		Employee e2 = new Employee("yonghwanKim", "±è¿ëÈ¯", 60, 20);
+		
+		e1.setPayManager(new PayLogic1());
+		e2.setPayManager(new PayLogic2());
+		
+		pm.addEmployee(e1);
+		pm.addEmployee(e2);
+		
+		pm.writeEmployeePay();
+	}
+
+}

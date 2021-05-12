@@ -1,0 +1,14 @@
+package chapter03_SOLID원칙.practice.p04_DIP_DependencyInversionPrinciple;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 아이 객체 생성
+		Kid kid = new Kid();
+		
+	}
+
+}
+
+// 문제점
+// 

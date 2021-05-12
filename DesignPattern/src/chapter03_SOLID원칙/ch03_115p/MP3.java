@@ -1,8 +1,0 @@
-package chapter03_SOLID¿øÄ¢.ch03_115p;
-
-public class MP3 {
-	public void playSong()
-	{
-		System.out.println("Song");
-	}
-}

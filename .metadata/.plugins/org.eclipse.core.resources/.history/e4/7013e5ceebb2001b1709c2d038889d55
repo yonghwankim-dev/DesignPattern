@@ -1,0 +1,46 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex10.before;
+
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+
+public class CalculatePayMachine extends Frame implements ActionListener, DocumentListener{
+	private JLabel workingHoursLabel = new JLabel("Working Hours = ",Label.RIGHT);
+	private JLabel overTimeHoursLabel = new JLabel("Overtime Hours = ",Label.RIGHT);
+	private JLabel payAmountLabel = new JLabel("Pay Amount = ", Label.RIGHT);
+	
+	private JTextField tfWorkingHours = new JTextField();
+	private JTextField tfOverTimeHours = new JTextField();
+	private JTextField tfResult = new JTextField();
+	
+	@Override
+	public void insertUpdate(DocumentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeUpdate(DocumentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void changedUpdate(DocumentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

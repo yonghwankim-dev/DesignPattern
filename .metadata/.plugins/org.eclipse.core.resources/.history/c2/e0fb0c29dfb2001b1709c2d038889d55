@@ -1,0 +1,10 @@
+package chapter03_SOLID¿øÄ¢.practice.p03_LSP_LiskovSubstitutionPrinciple;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

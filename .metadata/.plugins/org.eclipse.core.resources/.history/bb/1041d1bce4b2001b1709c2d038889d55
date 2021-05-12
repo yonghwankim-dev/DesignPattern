@@ -1,0 +1,5 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex05;
+
+public abstract class PayManager {
+	public abstract void calculatePay(Employee employee);
+}

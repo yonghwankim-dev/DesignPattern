@@ -1,0 +1,5 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex10.after;
+
+public interface PayCalculationStrategy {
+
+}

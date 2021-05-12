@@ -1,0 +1,26 @@
+package chapter03_SOLID원칙.practice.p01_SRP_SingleResponsibilityPrinciple;
+
+// 학생 클래스는 현재 너무나 많은 책임을 가지고 있다.
+public class Student {
+	
+	// 학생 클래스가 잘 할 수 있는것
+	public void getCourses() {
+		
+	}
+	// 학생 클래스가 잘 할 수 있는것
+	public void addCourse(Course c) {
+		
+	}
+	public void save() {
+		
+	}
+	public Student load() {
+		return null;
+	}
+	public void printOnReportCard() {
+		
+	}
+	public void printOnAttendanceBook() {
+		
+	}
+}

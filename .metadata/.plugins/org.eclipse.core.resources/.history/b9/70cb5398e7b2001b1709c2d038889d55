@@ -1,0 +1,14 @@
+package chapter03_SOLID¿øÄ¢.exercise.ex07.before;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PayrollManager pm = new PayrollManager();
+		
+		pm.addEmployee(new Employee("gildongHong", "È«±æµ¿", 40, 10));
+		pm.addEmployee(new Employee("yonghwanKim", "±è¿ëÈ¯", 60, 20));
+		
+		pm.writeEmployeePay();
+	}
+
+}
