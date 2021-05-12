@@ -1,0 +1,11 @@
+package chapter02_객체지향원리.ch02_68p.copy;
+
+public class StackClient {
+	public static void main(String[] args)
+	{
+		ArrayListStack st = new ArrayListStack(10);
+		st.push(10);
+		System.out.println(st.peek());
+	}
+	
+}

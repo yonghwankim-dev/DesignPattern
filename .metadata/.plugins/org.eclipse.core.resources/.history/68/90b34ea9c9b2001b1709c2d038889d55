@@ -1,0 +1,20 @@
+package chapter02_객체지향원리.practice.p02_inheritance_encapsulation.after;
+
+import java.util.ArrayList;
+
+
+public class MyStack<String> extends ArrayList<String>{
+	
+	// 1. 자식 클래스에 부모 클래스의 인스턴스를 참조하는 속성을 만든다. 이 속성 필드를 this로 초기화한다.
+	private ArrayList<String> arList = this;
+	
+	public void push(String element)
+	{
+		add(element);
+	}
+	
+	public String pop()
+	{
+		return remove(size()-1);
+	}
+}

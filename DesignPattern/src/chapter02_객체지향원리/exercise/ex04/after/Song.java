@@ -1,0 +1,18 @@
+package chapter02_객체지향원리.exercise.ex04.after;
+
+import chapter02_객체지향원리.exercise.ex04.after.saleMode.DiscountMode;
+
+public class Song {
+	private DiscountMode mode;
+	
+	public void setMode(DiscountMode mode)
+	{
+		this.mode = mode;
+	}
+	
+	public double getPrice()
+	{
+		return 10.0-(10.0*this.mode.getDisCountRate());
+	}
+	
+}

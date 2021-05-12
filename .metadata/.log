@@ -3668,3 +3668,39 @@ java.net.UnknownHostException: 알려진 호스트가 없습니다 (jope.ow2.org
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-05-12 11:59:57.632
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: DesignPattern
+!STACK 1
+Java Model Exception: Java Model Status [Cat [in [Working copy] Animal.java [in chapter02_객체지향원리.practice.p03_polymorphism.problem [in src [in DesignPattern]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:614)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.Member.getNameRange(Member.java:353)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.createProblemFor(AbstractImageBuilder.java:419)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:195)
+	at org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:615)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:475)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:386)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.compile(IncrementalImageBuilder.java:371)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:318)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.incrementalBuildLoop(IncrementalImageBuilder.java:186)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:143)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:292)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:212)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-05-12 11:59:57.633
+!MESSAGE Cat [in [Working copy] Animal.java [in chapter02_객체지향원리.practice.p03_polymorphism.problem [in src [in DesignPattern]]]] does not exist

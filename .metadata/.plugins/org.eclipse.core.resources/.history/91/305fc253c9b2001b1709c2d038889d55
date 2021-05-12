@@ -1,0 +1,30 @@
+package chapter02_객체지향원리.ch02_75p;
+
+import java.util.Vector;
+
+public class VectorStack{
+	
+	// 1. 자식 클래스에 부모 클래스의 인스턴스를 참조하는 속성을 만든다. 이 속성 필드를 this로 초기화한다.
+	private Vector<String> v = new Vector<String>();
+	
+	// 2. 서브 클래스에 정의된 각 메서드에 1번에서 만든 위임 속성 필드를 참조하도록 변경한다.
+	public void push(String element) 
+	{
+		v.add(element);
+	}
+	
+	public String pop()
+	{
+		return v.remove(v.size()-1);
+	}
+	
+	public boolean isEmpty()
+	{
+		return v.isEmpty();
+	}
+	
+	public int size()
+	{
+		return v.size();
+	}
+}

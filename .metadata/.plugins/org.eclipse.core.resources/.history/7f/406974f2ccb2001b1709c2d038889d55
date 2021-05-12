@@ -1,0 +1,16 @@
+package chapter02_객체지향원리.practice.p03_polymorphism.before;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog d = new Dog();
+		Cat c = new Cat();
+		Parrot p = new Parrot();
+		
+		d.bark();
+		c.meow();
+		p.sing();
+	}
+
+}

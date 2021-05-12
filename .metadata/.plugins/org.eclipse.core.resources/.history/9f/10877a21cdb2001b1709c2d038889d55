@@ -1,0 +1,11 @@
+package chapter02_按眉瘤氢盔府.practice.p03_polymorphism.after;
+
+public class Dog extends Pet{
+
+	@Override
+	public void talk() {
+		// TODO Auto-generated method stub
+		System.out.println("港港");
+	}
+	
+}
