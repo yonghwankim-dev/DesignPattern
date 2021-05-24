@@ -1,4 +1,0 @@
-
-public interface vehicle2 {
-	public void drive2();
-}

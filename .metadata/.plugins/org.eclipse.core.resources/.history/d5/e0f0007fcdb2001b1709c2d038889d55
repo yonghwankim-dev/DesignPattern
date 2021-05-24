@@ -1,7 +1,0 @@
-package chapter02_°´Ã¼ÁöÇâ¿ø¸®.practice.p03_polymorphism.after;
-
-public class Parrot {
-	public void sing(){
-		System.out.println("¾È³ç~");
-	}
-}

@@ -1,8 +1,0 @@
-package chapter03_SOLID¿øÄ¢.exercise.ex07.before;
-
-import java.util.ArrayList;
-
-public class PayrollManager {
-	private ArrayList<Employee> employees = new ArrayList<Employee>();
-	
-}

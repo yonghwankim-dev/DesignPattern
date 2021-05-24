@@ -1,6 +1,0 @@
-package chapter03_SOLID¿øÄ¢.practice.p02_OCP_OpenClosedPrinciple.fuel.after;
-
-public class FuelTankMonitoringWith extends FuelTankMonitoring{
-	
-
-}
