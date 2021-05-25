@@ -9,7 +9,7 @@
 
 **스트래티지 패턴 컬레보레이션**
 
-[##_Image|kage@bKX247/btq5HLjH9v7/NRck08iNQ1xy1j00yDLOkK/img.png|alignCenter|data-origin-width="959" data-origin-height="504" data-filename="strategy-pattern-collaboration.png" data-ke-mobilestyle="widthOrigin"|스트래티지 패턴 컬레보레이션||_##]
+![스트래티지 패턴 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/strategy-pattern-collaboration.png)
 
 스트래티지 패턴에서 나타나는 역할이 수행하는 작업은 다음과 같다.
 
@@ -19,7 +19,7 @@
 
 **스트래티지 패턴의 순차 **다이어그램****
 
-[##_Image|kage@dHDxRj/btq5HLD3MBu/8cT4zXm88nfGeKI7Ji7klK/img.png|alignCenter|data-origin-width="789" data-origin-height="636" data-filename="strategy-patterns-sequence.png" data-ke-mobilestyle="widthOrigin"|스트래티지 패턴의 순차 다이어그램||_##]
+![스트래티지 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/strategy-patterns-sequence.png)
 
 클라이언트가 원하는 스트래티지 객체를 생성하고 이를 Context 객체에 바인딩하면 Context 객체는 바인딩된 스트래티지 객체의 타입에 따라 적절한 행위를 실행한다.
 
@@ -27,7 +27,7 @@
 
 **5.2.1 로봇 설계**
 
-[##_Image|kage@IqVpm/btq5HDfrd86/M7YiW1MKyU2zF18RX5kqO0/img.png|alignCenter|data-origin-width="854" data-origin-height="506" data-filename="robot-design.png" data-ke-mobilestyle="widthOrigin"|로봇 설계||_##]
+![로봇 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/robot-design.png)
 
 클래스 다이어그램에서 Atom 클래스(아톰)와 TaekwonV 클래스(태권V)는 Robot이라는 추상 클래스의 자식 클래스로 설정하였다.
 
@@ -212,7 +212,7 @@ public class Client {
 
 #### **새로운 로봇의 추**가****
 
-[##_Image|kage@2LrII/btq5M3Rxmv0/uTajcQln8Lr5hErgpX1Wn0/img.png|alignCenter|data-origin-width="581" data-origin-height="376" data-filename="robot-add.png" data-ke-mobilestyle="widthOrigin"|새로운 로봇의 추가||_##]
+![새로운 로봇의 추가](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/robot-add.png)
 
 현재 시스템의 캡슐화 단위에 따라 새로운 로봇을 추가하기는 매우 쉽다. 그러나 새로운 로봇에 기존의 공격 또는 이동 방법을 추가하거나 변경하려고 하면 문제가 발생한다. 가령 **선가드(Sungard 클래스)에 태권V의 미사일 공격 기능을 사용하려고 하면 TaekwonV 클래스와 Sungard 클래스의 attack 메서드가 중복해서 사용된다. 이러한 중복 코드는 나중에 심각한 문제를 발생시킨다.**
 
@@ -228,7 +228,7 @@ public class Client {
 
 #### **공격과 이동 전략 인터페이스**
 
-[##_Image|kage@bpeUxF/btq5LKypEAf/hXknz5CkoblufWm2HOuaF1/img.png|alignCenter|data-origin-width="862" data-origin-height="297" data-filename="robot-design-attack-move-strategy-interface.png" data-ke-mobilestyle="widthOrigin"|공격과 이동 전략 인터페이스||_##]
+![공격과 이동 전략 인터페이스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/robot-design-attack-move-strategy-interface.png)
 
 클라이언트에서는 연관 관계를 이용해 이동 기능과 공격 기능의 변화를 포함시킨다.
 
@@ -238,7 +238,7 @@ public class Client {
 
 #### **개선된 인터페이스**
 
-[##_Image|kage@c8MRku/btq5G0u7Tb5/JbLCkelzMfNkRJOUofW0E0/img.png|alignCenter|data-origin-width="797" data-origin-height="670" data-filename="robot-design-enhanced.png" data-ke-mobilestyle="widthOrigin"|개선된 인터페이스||_##]
+![개선된 인터페이스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/diagrams/robot-design-enhanced.png)
 
 -   Robot : 로봇 클래스, 이동과 공격을 실행하는 메서드를 소유하고 있으며 이를 상속받아 구체적인 로봇을 생성 가능함
 -   Atom, TaekwonV : 로봇 클래스의 구체적인 클래스
