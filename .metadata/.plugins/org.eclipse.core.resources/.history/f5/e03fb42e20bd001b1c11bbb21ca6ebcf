@@ -1,0 +1,15 @@
+package chapter05_스트래티지패턴.exercise.p04_1_code;
+
+import java.awt.Color;
+
+import chapter05_스트래티지패턴.ch05_05.Ball;
+
+public class RedDrawStrategy extends DrawStrategy{
+
+	@Override
+	public void draw(Ball ball) {
+		// TODO Auto-generated method stub
+		ball.setColor(Color.red);
+	}
+
+}
