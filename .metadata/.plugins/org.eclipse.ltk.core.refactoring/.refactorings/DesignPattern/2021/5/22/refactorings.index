@@ -22,3 +22,32 @@
 1621923509397	Copy compilation units
 1621923513977	Copy compilation units
 1621923518089	Delete element
+1622039539238	Copy compilation units
+1622039559834	Rename type 'Main'
+1622039572149	Delete element
+1622039676950	Copy compilation units
+1622039685010	Rename type 'Main'
+1622039692835	Delete element
+1622039926271	Delete elements
+1622039930587	Copy compilation units
+1622039937101	Rename type 'Main'
+1622039947676	Delete element
+1622040660753	Copy compilation units
+1622040687908	Delete elements
+1622040752100	Copy compilation units
+1622040755848	Delete element
+1622040842330	Copy compilation units
+1622040846414	Delete elements
+1622040961710	Copy compilation units
+1622041007214	Rename package 'chapter06_싱글턴패턴.practice.p03_after_synchronized_method'
+1622041021522	Rename package 'chapter06_싱글턴패턴.practice.p04_static_class'
+1622041025555	Rename package 'chapter06_싱글턴패턴.practice.p05_static_class_fake_printer'
+1622041307127	Copy compilation units
+1622041311338	Delete elements
+1622041425017	Copy compilation units
+1622041439148	Delete element
+1622041450439	Copy compilation units
+1622041453832	Delete element
+1622079612124	Delete element
+1622084779984	Rename type 'Main'
+1622086798110	Rename type 'UserPrinter'

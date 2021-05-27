@@ -1,5 +1,0 @@
-package chapter06_ΩÃ±€≈œ∆–≈œ.ch06_10;
-
-public interface ServerProvider {
-	public Server getServer();
-}

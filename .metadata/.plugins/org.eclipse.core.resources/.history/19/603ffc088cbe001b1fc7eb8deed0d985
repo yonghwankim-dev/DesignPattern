@@ -1,0 +1,10 @@
+package chapter06_싱글턴패턴.practice.p06_static_class_fake_printer;
+
+public class PrinterFactory {
+	private static PrinterFactory printerFactory = null;
+	
+	protected Printer()	// 접근 제어자를 protected로 변경
+	{
+		
+	}
+}

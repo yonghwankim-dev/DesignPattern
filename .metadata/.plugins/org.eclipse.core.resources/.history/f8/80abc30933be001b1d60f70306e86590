@@ -1,0 +1,17 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.exercise.ex01;
+
+public class Singleton {
+	private Singleton instance = null;
+	public Singleton()
+	{
+		
+	}
+	
+	public static Singleton getInstance()
+	{
+		if(instance==null)
+		{
+			
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.practice.p05_static_class_fake_printer;
+
+public interface Ticket {
+	public int getTicketNum();
+}

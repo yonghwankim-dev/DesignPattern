@@ -1,0 +1,29 @@
+package chapter06_싱글턴패턴.practice.p06_static_class_fake_printer;
+
+public class PrinterFactory {
+	private static PrinterFactory printerFactory = null;
+	
+	protected PrinterFactory()	// 접근 제어자를 protected로 변경
+	{
+		
+	}
+	
+	public synchronized static PrinterFactory getPrinterFactory()
+	{
+		if(printerFactory==null)
+		{
+			printerFactory = new PrinterFactory();
+		}
+		return printerFactory;
+	}
+	
+	public static void setPrinterFacotry(PrinterFactory p)	// 정적 setter 클래스
+	{
+		printerFactory = p;
+	}
+	
+	public Printer getPrinter()
+	{
+		return new Printer();
+	}
+}

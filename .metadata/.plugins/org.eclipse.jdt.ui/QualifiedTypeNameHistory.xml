@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.Samsung.SamsungMotor"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.Samsung.SamsungDoor"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.LG.LGMotor"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.Hyundai.HyundaiMotor"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="chapter03_SOLID원칙.exercise.ex10.after.DefaultStrategy"/>
     <fullyQualifiedTypeName name="chapter03_SOLID원칙.exercise.ex10.after.PayGUI"/>
     <fullyQualifiedTypeName name="chapter03_SOLID원칙.exercise.ex10.after.NewStrategy"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.exercise.ex01.Singleton"/>
 </qualifiedTypeNameHistroy>

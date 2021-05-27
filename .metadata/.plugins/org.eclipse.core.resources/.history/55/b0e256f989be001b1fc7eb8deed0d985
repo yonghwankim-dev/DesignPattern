@@ -1,0 +1,5 @@
+package chapter06_ΩÃ±€≈œ∆–≈œ.practice.p06_static_class_fake_printer;
+
+public class RealPrinter315 implements Printer{
+
+}
