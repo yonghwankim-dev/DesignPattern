@@ -4,13 +4,13 @@
 
 **싱글턴 패턴 컬레보레이션**
 
-[##_Image|kage@cz5qnI/btq5TtIXjMe/RdhuK7A7fA1xB0VHoRK22k/img.png|alignCenter|data-origin-width="544" data-origin-height="494" data-filename="singleton-pattern_collaboration.png" data-ke-mobilestyle="widthOrigin"|싱글턴 패턴 컬레보레이션||_##]
+![싱글턴 패턴 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/singleton-pattern_collaboration.png)
 
 -   Singleton : 하나의 인스턴스만을 생성하는 책임이 존재하며 getInstance 메서드를 통해 모든 클라이언트에게 동일한 인스턴스를 반환하는 작업을 수행한다.
 
 **싱글턴 패턴의 순차 다이어그램**
 
-[##_Image|kage@btb2tM/btq5Ob4bA0Q/vMiD7OktBm7YD9vzArZbVk/img.png|alignCenter|data-origin-width="964" data-origin-height="575" data-filename="singleton-pattern_sequence.png" data-ke-mobilestyle="widthOrigin"|싱글턴 패턴의 순차 다이어그램||_##]
+![싱글턴 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/singleton-pattern_sequence.png)
 
 클라이언트가 싱글턴 클래스에 getInstance 메서드를 통해 객체 생성을 요청하면 이미 객체가 생성된 경우에는 객체를 반환하고, 처음으로 생성하는 경우에는 생성자를 호출해 객체를 생성한다.
 
@@ -613,7 +613,7 @@ public class RealPrinter315{
 
 **Printer 인터페이스를 참조하는 UsePrinter 클래스**
 
-[##_Image|kage@rh0M0/btq5QuJqF7C/XvppgxUUIrkoZWqw944t4k/img.png|alignCenter|data-origin-width="541" data-origin-height="201" data-filename="UsePrinter_using-Printer.png" data-ke-mobilestyle="widthOrigin"|Printer 인터페이스를 참조하는 UsePrinter 클래스||_##]
+![Printer 인터페이스를 참조하는 UsePrinter 클래스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/UsePrinter_using-Printer.png)
 
 위와 같이 설계를 변경 시 UsePrinter 클래스는 필요에 따라 실제의 프린터 하드우에어를 구동하는 RealPrinter315나 FakePrint 클래스를 사용할 수 있게 한다.
 
