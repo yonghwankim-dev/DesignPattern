@@ -8,7 +8,7 @@
 
 **스테이트 패턴의 컬레보레이션**
 
-[##_Image|kage@c2Ciqn/btq6b1MvrZ9/kxtSoWkqPGq2kk8pp9KVh1/img.png|alignCenter|data-origin-width="1157" data-origin-height="628" data-filename="state-pattern_collaboration.png" data-ke-mobilestyle="widthOrigin"|스테이트 패턴의 컬레보레이션||_##]
+![스테이트 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/state-pattern_collaboration.png)
 
 -   **State** : 시스템의 모든 상태에 공통의 인터페이스를 제공한다. 따라서 이 인터페이스를 실체화한 어떤 상태 클래스도 기존 상태 클래스를 대신해 교체해서 사용할 수 있다.
 -   **State1, State2, State3** : Context 객체가 요청한 작업을 자신의 방식으로 실제 실행한다. 대부분의 경우 다음 상태를 결정해 상태 변경을 Context 개체에 요청하는 역할도 수행한다.
@@ -22,7 +22,7 @@ UML에서 상태와 상태 변화를 모델링하는 도구로 상태 머신 다
 
 아래 그림은 선풍기를 표현하는 상태 다이어그램이다.
 
-[##_Image|kage@diuvJo/btq54M3WlAa/KAexvxPNJcG1xVOrKYSvw0/img.png|alignCenter|data-origin-width="785" data-origin-height="361" data-ke-mobilestyle="widthOrigin"|선풍기 상태 머신 다이어그램||_##]
+![선풍기 상태 머신 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/state-pattern_fan.png)
 
 위 다이어그램에서 모서리가 둥근 사각형은 상태(State)를 나타내고, 상태 사이에 화살표를 사용해 상태 전이(State Transition)을 나타낸다.
 
@@ -65,8 +65,8 @@ UML 상태 머신 다이어그램 의사 상태(Pseudo State)
 -   만약 이미 형광등이 켜져 있는 상태에서 On 버튼을 누르면 형광등 상태는 그대로 켜져 있다.
 -   만약 이미 형광등이 꺼져 있는 상태에서 Off 버튼을 누르면 형광등 상태는 그대로 꺼져 있다.
 -   형광등은 처음에는 꺼져 있는 상태라고 가정한다.
-
-[##_Image|kage@YHhjD/btq57FQMcwp/K4xTQeeYYJihfxhMMgl3qk/img.png|alignCenter|data-origin-width="802" data-origin-height="263" data-ke-mobilestyle="widthOrigin"|형광등의 상태 머신 다이어그램||_##]
+-   
+![형광등의 상태 머신 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/state-pattern_light-state-diagram.png)
 
 **형광등 상태 머신 다이어그램 코드**
 
@@ -141,7 +141,7 @@ Light Off
 
 **'취침등' 상태를 추가한 상태 머신 다이어그램**
 
-[##_Image|kage@1KJy2/btq6b1FOZhI/6fpNY6LjZKxQI1PK5pS0U0/img.png|alignCenter|data-origin-width="729" data-origin-height="502" data-ke-mobilestyle="widthOrigin"|취침등 상태를 추가한 상태 머신 다이어그램||_##]
+![취침등 상태를 추가한 상태 머신 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/state-pattern_sleeping-state-diagram.PNG)
 
 **'취침등' 상태를 추가한 상태 머신 다이어그램을 기반 코드**
 
@@ -209,7 +209,7 @@ public class Light {
 
 **스테이트 패턴으로 구현한 형광등 상태 머신 다이어그램**
 
-[##_Image|kage@zR8qM/btq6aOtkb5B/wUcQv8pIBMRkta6TkMhkyk/img.png|alignCenter|data-origin-width="734" data-origin-height="404" data-ke-mobilestyle="widthOrigin"|스테이트 패턴으로 구현한 형광등 상태 머신 다이어그램||_##]
+![스테이트 패턴으로 구현한 형광등 상태 머신 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/state-pattern_light-state-diagram_Improve.png)
 
 위 클래스 다이어그램은 5장의 스트래티지 패턴과 동일하다. Light 클래스에서 구체적인 상태 클래스가 아닌 추상화된 State 인터페이스만 참조하므로 현재 어떤 상태에 있는지와 무관하게 코드를 작성할 수 있다.
 
