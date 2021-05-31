@@ -214,7 +214,7 @@ public class Client {
 
 **개선된 Button 클래스의 다이어그램**
 
-![개선된 Button 클래스의 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_button_Improve.png)
+![개선된 Button 클래스의 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_button.png)
 
 1.  Button 클래스는 램프 켜기 또는 알람 동작 등의 기능을 실행할 때 Lamp 클래스의 turnOn 메서드나 Alarm 클래스의 start 메서드를 직접 호출하지 않는다.
 2.  대신 미리 약속된 Command 인터페이스의 execute 메서드를 호출한다.
