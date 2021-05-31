@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.Samsung.SamsungDoor"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.LG.LGMotor"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Business.Hyundai.HyundaiMotor"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Door.Abstract.Door"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Motor.Abstract.Motor"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Motor.Abstract.Direction"/>
     <fullyQualifiedTypeName name="sun.security.jca.GetInstance"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.Hyundai.HyundaiElevatorFactory"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.LG.LGElevatorFactory"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="chapter03_SOLID원칙.exercise.ex10.after.PayGUI"/>
     <fullyQualifiedTypeName name="chapter03_SOLID원칙.exercise.ex10.after.NewStrategy"/>
     <fullyQualifiedTypeName name="chapter06_싱글턴패턴.exercise.ex01.Singleton"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.RealPrinter315"/>
+    <fullyQualifiedTypeName name="junit.framework.TestCase"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.FakePrinter"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.UserPrinter"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.PrinterFactory"/>
+    <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.Printer"/>
 </qualifiedTypeNameHistroy>

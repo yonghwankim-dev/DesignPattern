@@ -1,0 +1,5 @@
+package chapter07_스테이트패턴.exercise.ex03;
+
+public class SLEEPING {
+
+}
