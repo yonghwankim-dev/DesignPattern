@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.security.jca.GetInstance"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.Hyundai.HyundaiElevatorFactory"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.LG.LGElevatorFactory"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.ElevatorFactory"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.Samsung.SamsungElevatorFactory"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.VendorID"/>
-    <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.ElevatorFactoryFactory"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_05.Path"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_05.Location"/>
     <fullyQualifiedTypeName name="chapter13_추상팩토리패턴.ch13_05.GPS.CheapGPS"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.UserPrinter"/>
     <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.PrinterFactory"/>
     <fullyQualifiedTypeName name="chapter06_싱글턴패턴.practice.p06_static_class_fake_printer.Printer"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex03.SLEEPING"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.state.State"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.state.NoMoneyState"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.state.NoEnoughMoneyState"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.state.EnoughMoneyState"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.state.SoldOutState"/>
+    <fullyQualifiedTypeName name="chapter07_스테이트패턴.exercise.ex05.VendingMachine"/>
 </qualifiedTypeNameHistroy>

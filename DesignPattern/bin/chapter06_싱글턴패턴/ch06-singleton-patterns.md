@@ -4,13 +4,13 @@
 
 **싱글턴 패턴 컬레보레이션**
 
-[##_Image|kage@cz5qnI/btq5TtIXjMe/RdhuK7A7fA1xB0VHoRK22k/img.png|alignCenter|data-origin-width="544" data-origin-height="494" data-filename="singleton-pattern_collaboration.png" data-ke-mobilestyle="widthOrigin"|싱글턴 패턴 컬레보레이션||_##]
+![싱글턴 패턴 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/singleton-pattern_collaboration.png)
 
 -   Singleton : 하나의 인스턴스만을 생성하는 책임이 존재하며 getInstance 메서드를 통해 모든 클라이언트에게 동일한 인스턴스를 반환하는 작업을 수행한다.
 
 **싱글턴 패턴의 순차 다이어그램**
 
-[##_Image|kage@btb2tM/btq5Ob4bA0Q/vMiD7OktBm7YD9vzArZbVk/img.png|alignCenter|data-origin-width="964" data-origin-height="575" data-filename="singleton-pattern_sequence.png" data-ke-mobilestyle="widthOrigin"|싱글턴 패턴의 순차 다이어그램||_##]
+![싱글턴 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/singleton-pattern_sequence.png)
 
 클라이언트가 싱글턴 클래스에 getInstance 메서드를 통해 객체 생성을 요청하면 이미 객체가 생성된 경우에는 객체를 반환하고, 처음으로 생성하는 경우에는 생성자를 호출해 객체를 생성한다.
 
@@ -20,7 +20,7 @@
 
 **step1 Printer Class 생성**
 
-```
+```java
 public class Printer {
     public Printer()
     {
@@ -37,7 +37,7 @@ Printer 클래스를 사용하여 프린터를 이용하려면 클라이언트 �
 
 new Printer()가 한번만 호출되도록 할 수 있는 직관적인 방법은 생성자를 외부에서 호출할 수 없게 하는 것이다. 그 방법은 Printer 클래스의 생성자의 접근제어자를 private으로 선언하면 된다.
 
-```
+```java
 public class Printer{
     private Printer()	// 접근제어자를 public -> private 변경
     {
@@ -52,7 +52,7 @@ public class Printer{
 
 위와 같이 변경하면 외부에서는 new Printer()를 더  사용할 수 없게 된다. 그러나 일단 Printer 인스턴스는 하나 생성해야 하는 상황이므로 아래와 같이 인스턴스를 만들어 외부에 제공해줄 메서드가 필요하다.
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private Printer()
@@ -93,7 +93,7 @@ getPrinter 메서드는 Printer 인스턴스가 이미 생성되어 있는지를
 
 위의 코드를 사용하여 5명의 사용자가 프린터를 이용하는 상황으로 코드를 작성한다.
 
-```
+```java
 public class User {
 	private String name;
 	
@@ -111,7 +111,7 @@ public class User {
 
 ```
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private Printer()
@@ -136,7 +136,7 @@ public class Printer {
 
 ```
 
-```
+```java
 public class Client {
 	private static final int User_NUM =5;
 	public static void main(String[] args) {
@@ -154,7 +154,7 @@ public class Client {
 
 ```
 
-```
+```java
 1=user print user chapter06_싱글턴패턴.practice.p01_before.Printer@5caf905d.
 2=user print user chapter06_싱글턴패턴.practice.p01_before.Printer@5caf905d.
 3=user print user chapter06_싱글턴패턴.practice.p01_before.Printer@5caf905d.
@@ -180,7 +180,7 @@ public class Client {
 
 위의 시나리오를 발생시키기 위해 Thread.sleep(1)을 이ㅛㅇ해 스레드 실행을 고의적으로 1ms 동안 정지하도록 한다.
 
-```
+```java
 public class UserThead extends Thread {
 	public UserThead(String name)
 	{
@@ -198,7 +198,7 @@ public class UserThead extends Thread {
 
 ```
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 
@@ -230,7 +230,7 @@ public class Printer {
 }
 ```
 
-```
+```java
 public class Client {
 	private static final int THREAD_NUM =5;
 	public static void main(String[] args) {
@@ -248,7 +248,7 @@ public class Client {
 
 ```
 
-```
+```java
 3-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@488cc17
 2-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@c7b723d
 4-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@3f59682d
@@ -259,7 +259,7 @@ public class Client {
 
 위의 실행 결과에서 볼 수 있듯이 각 스레드마다 각기 다른 Printer 인스턴스를 사용해 출력한다. 그런데 이 경우 Printer 인스턴스가 1개 이상 생긴다 하더라도 이렇다 할 문제가 발생하지 않는다. 그러나 Printer 클래스가 상태를 유지해야 하는 경우에는 문제가 발생한다. 위와 같이 보여준 **Printer 클래스와 같이 counter 변수와 같은 값을 인스턴스가 유지해야 한다.**
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private int counter = 0;
@@ -294,7 +294,7 @@ public class Printer {
 
 ```
 
-```
+```java
 3-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@488cc17.1
 2-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@c7b723d.2
 4-thread print using chapter06_싱글턴패턴.practice.p02_before_thread.Printer@3f59682d.1
@@ -313,7 +313,7 @@ public class Printer {
 
 **정적 변수에 인스턴스를 만들어 바로 초기화하는 방법**
 
-```
+```java
 public class Printer {
 	private static Printer printer = new Printer();
 	private int counter = 0;
@@ -347,7 +347,7 @@ private static Printer printer = new Printer(); 구분이 실행되면 정적 �
 
 아래는 위의 코드를 실행한 결과이다. 아래 결과와 같이 오직 객체 하나만을 생성됨을 확인 할 수 있다.
 
-```
+```java
 4-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d
 1-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d
 3-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d
@@ -357,7 +357,7 @@ private static Printer printer = new Printer(); 구분이 실행되면 정적 �
 
 **인스턴스를 만드는 메서드에 동기화하는 방법**
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private int counter = 0;
@@ -393,7 +393,7 @@ public class Printer {
 
 아래 결과를 통해서 Printer 클래스의 인스턴스가 오직 하나의 인스턴스만 생성하는 것을 확인할 수 있다.
 
-```
+```java
 1-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@48eeb158
 2-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@48eeb158
 3-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@48eeb158
@@ -404,7 +404,7 @@ public class Printer {
 
 **counter 변수의 경합 조건(race condition) 문제**
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private int counter = 0;
@@ -433,7 +433,7 @@ public class Printer {
 }
 ```
 
-```
+```java
 2-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d.3
 1-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d.5
 5-thread print using chapter06_싱글턴패턴.practice.p03_after_static_variable_init_instance.Printer@3f59682d.3
@@ -445,7 +445,7 @@ Printer 객체가 하나만 생성되었음에도 여전히 counter 변수의 �
 
 따라서 이 문제를 해결하려면 print 메서드의 counter 변수를 변경하는 부분도 동기화할 필요가 있다.
 
-```
+```java
 public class Printer {
 	private static Printer printer = null;
 	private int counter = 0;
@@ -479,7 +479,7 @@ public class Printer {
 
 위와 같이 counter 변수를 증가시키는 부분에 synchronized를 설정하면 다중 스레드가 counter 변수의 값을 동시에 갱신하지 않게 된다.
 
-```
+```java
 2-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@c7b723d.1
 1-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@c7b723d.2
 3-thread print using chapter06_싱글턴패턴.practice.p04_after_synchronized_method.Printer@c7b723d.3
@@ -493,7 +493,7 @@ public class Printer {
 
 아래 코드는 Printer 클래스를 싱글턴 패턴으로 구현하지 않고 정적 클래스로 구현한 예이다.
 
-```
+```java
 public class Printer {
 	private static int counter = 0;
 	
@@ -511,7 +511,7 @@ public class Printer {
 
 ```
 
-```
+```java
 public class UserThead extends Thread {
 	public UserThead(String name)
 	{
@@ -527,7 +527,7 @@ public class UserThead extends Thread {
 
 ```
 
-```
+```java
 public class Main {
 	private static final int THREAD_NUM =5;
 	public static void main(String[] args) {
@@ -545,7 +545,7 @@ public class Main {
 
 ```
 
-```
+```java
 1-thread print using .1
 3-thread print using .2
 2-thread print using .3
@@ -564,7 +564,7 @@ public class Main {
 
 이유는 정적 메서드는 인터페이스에서 사용할 수 없다. 아래와 같은 코드는 혀용되지 않는다.
 
-```
+```java
 public interface Printer{
 	public static void print(String str);	// 허용되지 않음
 }
@@ -580,7 +580,7 @@ public class RealPrinter315 implements Printer{
 
 아래 코드는 UsePrinter 클래스를 테스트하는 경우이다.
 
-```
+```java
 public class UsePrinter {
 	public void doSomething(Printer printer) 
 	{
@@ -597,7 +597,7 @@ public class UsePrinter {
 
 ```
 
-```
+```java
 public class RealPrinter315{
 	public synchronized static void print(String str){
     	// 실제 프린터 하드웨어를 조작하는 코드
@@ -613,13 +613,13 @@ public class RealPrinter315{
 
 **Printer 인터페이스를 참조하는 UsePrinter 클래스**
 
-[##_Image|kage@rh0M0/btq5QuJqF7C/XvppgxUUIrkoZWqw944t4k/img.png|alignCenter|data-origin-width="541" data-origin-height="201" data-filename="UsePrinter_using-Printer.png" data-ke-mobilestyle="widthOrigin"|Printer 인터페이스를 참조하는 UsePrinter 클래스||_##]
+![Printer 인터페이스를 참조하는 UsePrinter 클래스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/diagrams/UsePrinter_using-Printer.png)
 
 위와 같이 설계를 변경 시 UsePrinter 클래스는 필요에 따라 실제의 프린터 하드우에어를 구동하는 RealPrinter315나 FakePrint 클래스를 사용할 수 있게 한다.
 
 **Printer 인터페이스를 구현하는 RealPrinter315 클래스**
 
-```
+```java
 public class RealPrinter315 implements Printer{	// 싱글턴 패턴을 사용
 	private static Printer printer = null;
 	private RealPrinter315() 
@@ -643,7 +643,7 @@ public class RealPrinter315 implements Printer{	// 싱글턴 패턴을 사용
 }
 ```
 
-```
+```java
 public class UsePrinter {
 	public void doSomething(Printer printer) 
 	{
@@ -657,7 +657,7 @@ public class UsePrinter {
 }
 ```
 
-```
+```java
 public class FakePrinter implements Printer { // 테스트용 가짜 데이터
 	private String str;
 
@@ -677,7 +677,7 @@ public class FakePrinter implements Printer { // 테스트용 가짜 데이터
 
 ```
 
-```
+```java
 public class UsePrinterTest extends TestCase{
 	public void testdoSomething()
 	{

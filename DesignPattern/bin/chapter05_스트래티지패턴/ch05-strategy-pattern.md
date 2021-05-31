@@ -37,7 +37,7 @@
 
 아래의 코드는 로봇 설계 클래스 다이어그램을 기반으로 작성한 것이다.
 
-```
+```java
 public abstract class Robot {
 	private String name;
 
@@ -57,7 +57,7 @@ public abstract class Robot {
 
 ```
 
-```
+```java
 public class TaekwonV extends Robot{
 	public TaekwonV(String name) 
 	{
@@ -80,7 +80,7 @@ public class TaekwonV extends Robot{
 }
 ```
 
-```
+```java
 public class Atom extends Robot{
 
 	public Atom(String name) {
@@ -103,7 +103,7 @@ public class Atom extends Robot{
 }
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
@@ -141,7 +141,7 @@ public class Client {
 
 ### **5.3.1 기존 로봇의 공격과 이동 방법을 수정하는 경우**
 
-```
+```java
 // 태권브이 클래스 공격과 이동 방법 수정
 public class TaekwonV extends Robot {
 
@@ -163,7 +163,7 @@ public class TaekwonV extends Robot {
 }
 ```
 
-```
+```java
 // 아톰 클래스 이동 방법 수정
 public class Atom extends Robot {
 
@@ -185,7 +185,7 @@ public class Atom extends Robot {
 }
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
@@ -258,7 +258,7 @@ Robot 클래스의 입장에서 보면 구체적인 이동 방식과 공격 방�
 
 이를 위해 Robot 클래스에 setMovingStrategy와 setAttackStrategy 메서드를 정의해 로봇의 이동 방식과 공격 방식이 필요할 때 바꿀 수 있도록 했다. 이러한 변경이 가능한 이유는 상속 대신 집약 관계를 이용했기 때문이다.
 
-```
+```java
 public abstract class Robot {
 	private String name;
 	private MovingStrategy movingStrategy;
@@ -296,7 +296,7 @@ public abstract class Robot {
 
 ```
 
-```
+```java
 public class Atom extends Robot{
 
 	public Atom(String name) {
@@ -307,7 +307,7 @@ public class Atom extends Robot{
 
 ```
 
-```
+```java
 public class TaekwonV extends Robot{
 	public TaekwonV(String name) 
 	{
@@ -317,14 +317,14 @@ public class TaekwonV extends Robot{
 
 ```
 
-```
+```java
 public interface MovingStrategy {
 	public void move();
 }
 
 ```
 
-```
+```java
 public class FlyingStrategy implements MovingStrategy{
 
 	@Override
@@ -337,7 +337,7 @@ public class FlyingStrategy implements MovingStrategy{
 
 ```
 
-```
+```java
 public class WalkingStrategy implements MovingStrategy{
 
 	@Override
@@ -350,14 +350,14 @@ public class WalkingStrategy implements MovingStrategy{
 
 ```
 
-```
+```java
 public interface AttackStrategy {
 	public void attack();
 }
 
 ```
 
-```
+```java
 public class PunchStrategy implements AttackStrategy{
 
 	@Override
@@ -371,7 +371,7 @@ public class PunchStrategy implements AttackStrategy{
 
 ```
 
-```
+```java
 public class MissileStrategy implements AttackStrategy{
 
 	@Override
@@ -384,7 +384,7 @@ public class MissileStrategy implements AttackStrategy{
 
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
