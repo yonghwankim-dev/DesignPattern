@@ -70,7 +70,7 @@ UML 상태 머신 다이어그램 의사 상태(Pseudo State)
 
 **형광등 상태 머신 다이어그램 코드**
 
-```
+```java
 public class Light {
     private static int ON = 0;    // 형광등이 켜진 상태
     private static int OFF = 1;    // 형광등이 꺼진 상태
@@ -110,7 +110,7 @@ public class Light {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -123,7 +123,7 @@ public class Client {
 }
 ```
 
-```
+```java
 반응 없음
 Light On
 Light Off
@@ -147,7 +147,7 @@ Light Off
 
 추가된 취침등 상태 값에서 on\_button\_pushed 상태와 off\_button\_pushed 상태를 어떻게 처리하는가를 코딩해야 한다. 따라서 on\_button\_pushed와 off\_button\_pushed 메서드 안에서 현재 상태 값이 SLEEPING 변수 값과 같은지를 검사하고 값이 같다면 요구사항에 맞게 적절한 행위를 하도록 코딩한다.
 
-```
+```java
 public class Light {
 	private static int ON = 0;	// 형광등이 켜진 상태
 	private static int OFF = 1;	// 형광등이 꺼진 상태
@@ -217,14 +217,14 @@ Light 클래스에서는 상태 클래스에 작업을 위임만 하면 된다. 
 
 **개선된 형광등 상태 머신 다이어그램 코드**
 
-```
+```java
 public interface State {
 	public void on_button_pushed(Light light);
 	public void off_button_pushed(Light light);
 }
 ```
 
-```
+```java
 public class ON implements State{
 	private static ON on = new ON();	// ON 클래스의 인스턴스로 초기화
 	
@@ -256,7 +256,7 @@ public class ON implements State{
 
 ```
 
-```
+```java
 public class OFF implements State{
 	private static OFF off = new OFF();
 	
@@ -290,7 +290,7 @@ public class OFF implements State{
 
 ```
 
-```
+```java
 public class Light {
 	private State state;			// 형광등의 현재 상태
 	
@@ -317,7 +317,7 @@ public class Light {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -330,7 +330,7 @@ public class Client {
 }
 ```
 
-```
+```java
 반응 없음
 Light On
 Light Off
