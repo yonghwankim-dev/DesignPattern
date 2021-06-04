@@ -8,7 +8,7 @@
 
 **커맨드 패턴의 컬레보레이션**
 
-[##_Image|kage@A4X7y/btq6escJkfl/kE1qt9IV6mniwfVKke4EVk/img.png|alignCenter|data-origin-width="869" data-origin-height="479" data-ke-mobilestyle="widthOrigin"|커맨드 패턴의 컬레보레이션||_##]
+![커맨드 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_collaboration.png)
 
 -   Command : 실행될 기능에 대한 인터페이스, 실행될 기능을 execute 메서드로 선언함
 -   ConcreteCommand : 실제로 실행되는 기능을 구현. 즉, Command라는 인터페이스를 구현함
@@ -17,7 +17,7 @@
 
 **커맨드 패턴의 순차 다이어그램**
 
-[##_Image|kage@cVy5j0/btq57HuZDeK/tBrKG0CN22nmj0ZkcnNHT0/img.png|alignCenter|data-origin-width="635" data-origin-height="352" data-ke-mobilestyle="widthOrigin"|커맨드 패턴의 순차 다이어그램||_##]
+![커맨드 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_seq.png)
 
 1.  클라이언트가 원하는 커맨드 객체를 생성
 2.  커맨드 객체를 Invoker 객체에게 바인딩한다.
@@ -30,11 +30,11 @@
 
 **램프를 켜는 버튼을 설게한 클래스 다이어그램**
 
-[##_Image|kage@CSFxJ/btq6gBtlZtI/xgwgNwsk7eShz7mUDRSfJ0/img.png|alignCenter|data-origin-width="831" data-origin-height="245" data-ke-mobilestyle="widthOrigin"|램프를 켜는 버튼을 설계한 클래스 다이어그램||_##]
+![램프를 켜는 버튼을 설계한 클래스 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/button-lamp_class-diagram.png)
 
 **램프를 켜는 버튼을 설계한 클래스 다이어그램 기반 코드**
 
-```
+```java
 public class Lamp {
 	public void turnOn()
 	{
@@ -43,7 +43,7 @@ public class Lamp {
 }
 ```
 
-```
+```java
 public class Button {
 	private Lamp theLamp;
 	
@@ -59,7 +59,7 @@ public class Button {
 }
 ```
 
-```
+```java
 // 버튼을 눌렀을때 램프를 켜는 프로그램
 public class Client {
 
@@ -84,7 +84,7 @@ Button 클래스의 생성자를 이용해 불을 켤 Lamp 객체를 전달한�
 
 램프를 켜는 대신 알람을 시작하게 하려면 Button 클래스의 pressed 메서드를 수정해야 한다. 다음 코드는 버튼을 눌렀을때 알람이 동작하는 프로그램의 코드이다.
 
-```
+```java
 public class Alarm {
 	public void start()
 	{
@@ -93,7 +93,7 @@ public class Alarm {
 }
 ```
 
-```
+```java
 public class Button {
 	private Alarm theAlarm;
 	
@@ -109,7 +109,7 @@ public class Button {
 }
 ```
 
-```
+```java
 // 버튼을 눌렀을때 다른 기능을 실행하는 경우
 // 램프를 켜는 대신 알람을 시작하게 Alarm 클래스를 추가하는 프로그램
 public class Client {
@@ -132,7 +132,7 @@ public class Client {
 
 아래의 코드는 램프 켜기와 알람을 모두 구현하기 위해 변경한 Button 클래스의 코드이다.
 
-```
+```java
 public class Lamp {
 	public void turnOn()
 	{
@@ -141,7 +141,7 @@ public class Lamp {
 }
 ```
 
-```
+```java
 public class Alarm {
 	public void start()
 	{
@@ -150,7 +150,7 @@ public class Alarm {
 }
 ```
 
-```
+```java
 enum Mode{LAMP, ALARM};
 
 public class Button {
@@ -184,7 +184,7 @@ public class Button {
 }
 ```
 
-```
+```java
 // 버튼을 누르는 동작에 따라 다른 기능을 실행하는 경우
 // 버튼을 처음 눌렀을대는 램프를 켜고, 두번 눌럿을 때는 알람을 동작하게 한다.
 public class Client {
@@ -214,7 +214,7 @@ public class Client {
 
 **개선된 Button 클래스의 다이어그램**
 
-[##_Image|kage@bR3QTE/btq6cTPl8A4/2KvBShhxWZDjlXV3W0tiO0/img.png|alignCenter|data-origin-width="1210" data-origin-height="356" data-ke-mobilestyle="widthOrigin"|개선된 Button 클래스의 다이어그램||_##]
+![개선된 Button 클래스의 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_button.png)
 
 1.  Button 클래스는 램프 켜기 또는 알람 동작 등의 기능을 실행할 때 Lamp 클래스의 turnOn 메서드나 Alarm 클래스의 start 메서드를 직접 호출하지 않는다.
 2.  대신 미리 약속된 Command 인터페이스의 execute 메서드를 호출한다.
@@ -223,13 +223,13 @@ public class Client {
 
 **개선된 Button 클래스의 다이어그램 기반 코드**
 
-```
+```java
 public interface Command {
 	public void execute();
 }
 ```
 
-```
+```java
 public class Button {
 	private Command theCommand;
 	
@@ -250,7 +250,7 @@ public class Button {
 }
 ```
 
-```
+```java
 public class Lamp {
 	public void turnOn()
 	{
@@ -259,7 +259,7 @@ public class Lamp {
 }
 ```
 
-```
+```java
 public class LampOnCommand implements Command{
 	private Lamp theLamp;
 	
@@ -276,7 +276,7 @@ public class LampOnCommand implements Command{
 }
 ```
 
-```
+```java
 public class Alarm {
 	public void start()
 	{
@@ -285,7 +285,7 @@ public class Alarm {
 }
 ```
 
-```
+```java
 public class AlarmStartCommand implements Command{
 	private Alarm theAlarm;
 	
@@ -303,7 +303,7 @@ public class AlarmStartCommand implements Command{
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -334,19 +334,19 @@ Button 클래스의 pressed 메서드에서 Command 인터페이스의 execute �
 
 **램프를 켜거나 끄는 기능을 추가한 Button 클래스 다이어그램**
 
-[##_Image|kage@3rx1O/btq56jH1NH4/zoQCZ961KSjq05kqVecMPk/img.png|alignCenter|data-origin-width="763" data-origin-height="423" data-ke-mobilestyle="widthOrigin"|램프를 켜거나 끄는 기능을 추가한 Button 클래스||_##]
+![램프를 켜거나 끄는 기능을 추가한 Button 클래스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/command-pattern_button_Improve.png)
 
 램프를 끄는 기능을 구현하기 위해 LampOffCommand 클래스가 Command 인터페이스를 구현하도록 한다. Lamp 클래스에는 기존의 켜는 기능을 위한 turnOn 메서드 분만 아니라 끄기 위한 turnOff 메서드를 구현한다.
 
 **램프를 켜거나 끄는 기능을 추가한 Button 클래스 다이어그램 기반 코드**
 
-```
+```java
 public interface Command {
 	public void execute();
 }
 ```
 
-```
+```java
 public class Button {
 	private Command theCommand;
 	
@@ -368,7 +368,7 @@ public class Button {
 
 ```
 
-```
+```java
 public class Lamp {
 	public void turnOn()
 	{
@@ -381,7 +381,7 @@ public class Lamp {
 }
 ```
 
-```
+```java
 public class LampOnCommand implements Command{
 	private Lamp theLamp;
 	
@@ -399,7 +399,7 @@ public class LampOnCommand implements Command{
 }
 ```
 
-```
+```java
 public class LampOffCommand implements Command{
 	private Lamp theLamp;
 	
@@ -417,7 +417,7 @@ public class LampOffCommand implements Command{
 }
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -436,7 +436,7 @@ public class Client {
 }
 ```
 
-```
+```java
 Lamp On
 Lamp Off
 ```
