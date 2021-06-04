@@ -8,7 +8,7 @@
 
 **옵서버 패턴의 컬레보레이션**
 
-[##_Image|kage@bjrY4S/btq6sdmPd3z/KG0KlxDtAHDIpBZQ9sYRvK/img.png|alignCenter|data-origin-width="1127" data-origin-height="581" data-ke-mobilestyle="widthOrigin"|옵서버 패턴의 컬레보레이션||_##]
+![옵서버 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter09_%EC%98%B5%EC%84%9C%EB%B2%84%ED%8C%A8%ED%84%B4/diagram/observer-pattern_collaboration.png)
 
 -   **Observer** : 데이터의 변경을 통보 받는 인터페이스. 즉 Subject에서는 Observer 인터페이스와 update 메서드를 호출함으로써 ConcreteSubject의 데이터 변경을 ConcreteObserver에게 통보한다.
 -   **Subject** : ConcreteOberser 객체를 관리하는 요소. Observer 인터페이스를 참조해서 ConcreteObserver를 관리하므로 ConcreteObserver의 변화에 독립적일 수 있다.
@@ -17,7 +17,7 @@
 
 **옵서버 패턴의 순차 다이어그램**
 
-[##_Image|kage@vZKzO/btq6rwmLBsP/rjgSzE2UnEJNZSkkcCTFf0/img.png|alignCenter|data-origin-width="1222" data-origin-height="643" data-ke-mobilestyle="widthOrigin"|옵서버 패턴의 순차 다이어그램||_##]
+![옵서버 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter09_%EC%98%B5%EC%84%9C%EB%B2%84%ED%8C%A8%ED%84%B4/diagram/observer-pattern_seq.png)
 
 ConcreteSubject가 자신의 상태, 즉 데이터의 변경을 통보하려면 ConcreteObserver가 미리 등록되어 있어야 한다. 위 그림에서는 ConcreteSubject s1에 o1과 o2가 ConcreteObserver로 등록되어 있다.
 
@@ -34,7 +34,7 @@ ConcreteObserver o1이 ConcreteSubject s1의 상태를 변경하면 s1은 등록
 
 **ScoreRecord 클래스의 값을 출력하는 DataSheetView 클래스의 관계**
 
-[##_Image|kage@ntcrn/btq6q1ghbhw/bW9i4EgfRCSSpR5t2wqmHk/img.png|alignCenter|data-origin-width="1048" data-origin-height="214" data-ke-mobilestyle="widthOrigin"|ScoreRecord 클래스의 값을 출력하는 DataSheetView 클래스의 설계||_##]
+![ScoreRecord 클래스의 값을 출력하는 DataSheetView 클래스의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter09_%EC%98%B5%EC%84%9C%EB%B2%84%ED%8C%A8%ED%84%B4/diagram/observer-pattern_scoreRecord-DataSheetView_Relation.png)
 
 **ScoreRecord 클래스의 값을 출력하는 DataSheetView 클래스의 관계 기반 코드**
 
@@ -397,7 +397,7 @@ ScoreRecord 클래스에서는 통보 대상인 객체를 참조하는 것을 �
 
 **개선된 ScoreRecord의 클래스 다이어그램**
 
-[##_Image|kage@ls8ki/btq6uIs8nKE/8tpTjmRVmcTdfaXz98H8k1/img.png|alignCenter|data-origin-width="1108" data-origin-height="638" data-ke-mobilestyle="widthOrigin"|||_##]
+![개선된 ScoreRecord의 클래스 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter09_%EC%98%B5%EC%84%9C%EB%B2%84%ED%8C%A8%ED%84%B4/diagram/observer-pattern_improve.png)
 
 -   Subject : 성적 변경에 관심이 있는 대상 객체를 관리하는 기능을 구현
     -   attach : 성적 변경에 관심이 있는 대상 객체를 추가한다.
