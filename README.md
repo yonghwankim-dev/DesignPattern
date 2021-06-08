@@ -1,115 +1,16 @@
-# DesignPattern
-JAVA 객체 지향 디자인 패턴
+### **JAVA 객체 지향 디자인 패턴 도서 코드 및 요약 정리**
 
-# 목차
-1. 객체 지향 모델링
-    1. 모델링
-    2. UML
-    3. 클래스 다이어그램
-        1. 클래스
-        2. 관계
-            1. 연관 관계(Association)
-            2. 일반화 관계(Generalization)
-            3. 집합 관계(Composition, Aggregation)
-            4. 의존 관계(Dependency)
-            5. 인터페이스와 실체화 관계(Realization)
-2. 객체 지향 원리
-    1. 추상화
-    2. 캡슐화
-    3. 일반화 관계
-        1. 일반화는 또 다른 캡슐화
-        2. 일반화 관계와 위임
-        3. 집합론 관점으로 본 일반화 관계
-    4. 다형성
-    5. 피터 코드의 상속 규칙
-3. SOLD 원칙
-    1. 단일 책임 원칙
-        1. 책임의 의미
-        2. 변경
-        3. 책임 분리
-        4. 산탄총 수술
-        5. 관심지향 프로그래밍과 횡단 관심 문제
-    2. 개방-폐쇠 원칙
-    3. 리스코프 치환 원칙
-    4. 의존 역전 원칙
-    5. 인터페이스 분리 원칙
-
-4. 디자인 패턴
-    1. 디자인 패턴의 이해
-    2. GoF 디자인 패턴
-    3. UML과 디자인 패턴
-        1. 컬레보레이션
-        2. 순차 다이어그램
-        3. 순차 다이어그램과 클래스 다이어그램의 관계
-
-5. 스트래티지 패턴
-    1. 로봇 만들기
-    2. 문제점
-        1. 기존 로봇의 공격과 이동 방법을 수정하는 경우
-        2. 새로운 로봇에 공격/이동 방법을 추가/수정하는 경우
-    3. 해결책
-    4. 스트래티지 패턴
-
-6. 싱글턴 패턴
-    1. 프린터 관리자 만들기
-    2. 문제점
-    3. 해결책
-    4. 싱글턴 패턴
-    5. 싱글턴 패턴과 정적 클래스
-
-7. 스테이트 패턴
-    1. 상태 머신 다이어그램
-    2. 형광등 만들기
-    3. 문제점
-    4. 해결책
-    5. 스테이트 패턴
-
-8. 커맨드 패턴
-    1. 만능 버튼 만들기
-    2. 문제점
-        1. 버튼을 눌렀을 때 다른 기능을 실행하는 경우
-        2. 버튼을 누르는 동작에 따라 다른 기능을 실행하는 경우
-    3. 해결책
-    4. 커맨드 패턴
-
-9. 옵서버 패턴
-    1. 여러 가지 방식으로 성적 출력하기
-    2. 문제점
-        1. 성적을 다른 형태로 출력하는 경우
-        2. 동시 혹은 순차적으로 성적을 출력하는 경우
-    3. 해결책
-    4. 옵서버 패턴
-
-10. 데커레이터 패턴
-    1. 도로 표시 방법 조회하기
-    2. 문제점
-        1. 또다른 도로 표시 기능을 추가로 구현하는 경우
-        2. 여러 가지 추가 기능을 조합해야 하는 경우
-    3. 해결책
-    4. 데커레이터 패턴
-
-11. 템플릿 메서드 패턴
-    1. 여러 회사의 모터 지원하기
-    2. 문제점
-    3. 해결책
-    4. 템플릿 메서드 패턴
-
-12. 팩토리 메서드 패턴
-    1. 여러 가지 방식의 엘리베이터 스케줄링 방법 지원하기
-    2. 문제점
-    3. 해결책
-    4. 팩토리 메서드 패턴
-
-13. 추상 팩토리 패턴
-    1. 엘리베이터 부품 업체 변경하기
-    2. 문제점
-        1. 다른 제조 업체의 부품을 사용해야 하는 경우
-        2. 새로운 제조 업체의 부품을 지원해야 하는 경우
-    3. 해결책
-    4. 추상 팩토리 패턴
-
-14. 컴퍼지트 패턴
-    1. 컴퓨터에 추가 장치 지원하기
-    2. 문제점
-    3. 해결책
-    4. 컴퍼지트 패턴
+-   [chapter01\_객체지향모델링](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81.md)
+-   [chapter02\_객체지향 원리](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter02_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9B%90%EB%A6%AC/chapter02_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9B%90%EB%A6%AC.md)
+-   [chapter03\_SOLID 원칙]()
+-   [chapter04\_디자인 패턴](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter04_%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/ch04-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4.md)
+-   [chapter05\_전략 패턴(Strategy Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter05_%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%ED%8C%A8%ED%84%B4/ch05-strategy-pattern.md)
+-   [chapter06\_싱글턴 패턴(Singleton Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter06_%EC%8B%B1%EA%B8%80%ED%84%B4%ED%8C%A8%ED%84%B4/ch06-singleton-patterns.md)
+-   [chapter07\_스테이트 패턴(State Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter07_%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%ED%8C%A8%ED%84%B4/ch07-State-Patterns.md)
+-   [chapter08\_커맨드 패턴(Command Pattern)](https://github.com/yonghwankim-dev/DesignPattern/tree/master/DesignPattern/src/chapter08_%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%8C%A8%ED%84%B4)
+-   [chapter09\_옵서버 패턴(Observer Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter09_%EC%98%B5%EC%84%9C%EB%B2%84%ED%8C%A8%ED%84%B4/ch09-observer-patterns.md)
+-   [chapter10\_데커레이터 패턴(Decorator Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/ch10-decorator-patterns.md)
+-   [chapter11\_템플릿 메서드 패턴(Template Method Pattern)](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/ch10-template-method-patterns.md)
+-   [chapter12\_팩토리 메서드 패턴(Factory Method Pattern)]
+-   [chapter13\_추상 팩토리 패턴(Abstract Factory Pattern)]
+-   [chapter14\_컴퍼지트 패턴(Composite pattern)]
