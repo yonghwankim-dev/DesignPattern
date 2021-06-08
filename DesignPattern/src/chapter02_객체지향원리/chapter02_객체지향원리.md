@@ -14,7 +14,7 @@
 
 자동차 종류마다 엔진 오일을 교환하는 방식이 다르다고 가정한다.
 
-```
+```java
 switch(자동차종류)
     case 아우디: // 아우디 엔진 오일을 교환하는 과정
     case 벤츠: // 벤츠 엔진 오일을 교환하는 과정
@@ -22,7 +22,7 @@ switch(자동차종류)
 
 위와 같은 상태에서 BMW 자동차 엔진 오일을 교환하는 기능을 추가하라는 요구사항 요청 시 다음과 같이 수정될 수 있다. 아래와 같이 요구사항이 추가 될 시 수정사항이 많아져서 문제가 발생할 수 있다.
 
-```
+```java
 switch(자동차종류)
     case 아우디: // 아우디 엔진 오일을 교환하는 과정
     case 벤츠: // 벤츠 엔진 오일을 교환하는 과정
@@ -33,7 +33,7 @@ switch(자동차종류)
 
 아우디, 벤츠, BMW와 같은 클래스들의 추상화 개념으로 Car 클래스를 정의한다.
 
-```
+```java
 public void changeEngineOil(Car c){
 	c.changeEngineOil();
 }
@@ -59,7 +59,7 @@ public void changeEngineOil(Car c){
 
 정보은닉을 수행하지 않으면 소프트웨어 결합이 많을수록 문제가 많이 발생한다.
 
-```
+```java
 public class ArrayStack{
     public int top;
     public int[] itemArray;
@@ -83,7 +83,7 @@ public class StackClient{
 
 다음과 같이 필드 멤버들의 접근 제어자를 private로 선언하여 캡슐화(정보 은닉화)를 수행한다.
 
-```
+```java
 public class ArrayStack{
     private int top;
     private int[] itemArray;
@@ -99,13 +99,13 @@ public class ArrayStack{
 -   하지만 속성이나 기능의 재사용만 강조해서 사용하는 경우가 많다. 이는 일반화 관계를 한정되게 바라보는 시각이다.
 -   **일반화 관계는 자식 클래스를 외부로부터 정보 은닉화하는 캡슐화의 일종이다.**
 
-![](https://blog.kakaocdn.net/dn/df0ty9/btq4CrUXCIH/Q1dSyXJqzqdyKlX34ve6S0/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter02_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9B%90%EB%A6%AC/diagram/01_generalization.png)
 
 **일반화의 필요성**
 
 아래 코드는 장바구니에 있는 과일 가격의 총합을 구하는 코드이다.
 
-```
+```java
 int sum = 0;
 while(장바구니에 과일이 존재){
 	switch(과일 종류){
@@ -130,7 +130,7 @@ while(장바구니에 과일이 존재){
 
 Fruit 클래스의 인스턴스는 사과, 바나나, 포도 인스턴스를 저장할 수 있기 때문에 아래와 같이 변경할 수 있다.
 
-```
+```java
 public int computeTotalPrice(LinkedList<Friuit> f){
     int total = 0;
     iterator<Fruit> itr = f.iterator();
@@ -152,7 +152,7 @@ calculatePrice 메소드는 실제 과일 객체의 종류에 따라 다르게 �
 
 아래 그림과 같이 사람 클래스는 아우디, 벤츠, BMW와 같은 클래스들을 직접적으로 참조하지 않고 오직 상위 클래스인 자동차 클래스와만 참조된다.
 
-![](https://blog.kakaocdn.net/dn/cEjd9Z/btq4HsZpTXj/K2MFKCfADYUKJm1Hao7p90/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter02_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9B%90%EB%A6%AC/diagram/02_generalization-capsulation_relation.png)
 
 **2.4 다형성**
 
@@ -164,7 +164,7 @@ calculatePrice 메소드는 실제 과일 객체의 종류에 따라 다르게 �
 
 **다형성을 적용하지 않은 코드**
 
-```
+```java
 class Dog{
 	public void bark(){...}
 }
@@ -185,7 +185,7 @@ public class Client{
 
 **다형성을 적용한 코드**
 
-```
+```java
 abstract class Pet{
 	public abstract void talk();
 }
