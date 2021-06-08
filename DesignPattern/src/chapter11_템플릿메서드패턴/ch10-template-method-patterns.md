@@ -6,14 +6,14 @@
 
 **템플릿 메서드 패턴의 컬레보레이션**
 
-[##_Image|kage@b4uBdF/btq6Q60m94o/aHi8REUpEXw9VcI4jxFcYK/img.png|alignCenter|data-origin-width="732" data-origin-height="443" data-filename="template-method-pattern_collaboration.png" data-ke-mobilestyle="widthOrigin"|템플릿 메서드 패턴의 컬레보레이션||_##]
+![템플릿 메서드 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/template-method-pattern_collaboration.png)
 
 -   **AbstractClass** : 템플릿 메서드를 정의하는 클래스. 하위 클래스에 공통 알고리즘을 정의하고 하위 클래스에서 구현될 기능을 primitive 메서드 또는 hook 메서드로 정의하는 클래스다.
 -   **ConcreteClass **: 물려받은 primitive 메서드나 hook 메서드를 구현하는 클래스. 상위 클래스에 구현된 템플릿 메서드의 일반적인 알고리즘에서 하위 클래스에 적합하게 primitive 메서드나 hook 메서드를 오버라이드하는 클래스다.
 
 **템플릿 메서드 패턴의 순차 다이어그램**
 
-[##_Image|kage@dbzjSC/btq6NbBTZz9/tkR6QauiKLVvvZ1hXtsJa0/img.png|alignCenter|data-origin-width="626" data-origin-height="379" data-filename="template-method-pattern_seq.png" data-ke-mobilestyle="widthOrigin"|템플릿 메서드 패턴의 순차 다이어그램||_##]
+![템플릿 메서드 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/template-method-pattern_seq.png)
 
 1.  Client는 ConcreteClass 객체의 templateMethod 메서드 호출
 2.  templateMethod 메서드는 AbstractClass에 정의되었지만 ConcreteClass는 AbstractClass의 하위 클래스이므로 Client가 호출할 수 있다.
@@ -25,7 +25,7 @@
 
 **현대 모터를 구동시키는 HyundaiMotor 클래스 설계**
 
-[##_Image|kage@bdSpId/btq6QxYtf67/ZF32oEtgZzHgjhlyzKYusK/img.png|alignCenter|data-origin-width="1057" data-origin-height="277" data-filename="hyundai-motor.png" data-ke-mobilestyle="widthOrigin"|현대 모터를 구동시키는 HyudaiMotor 클래스 설계||_##]
+![현대 모터를 구동시키는 HyudaiMotor 클래스 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/hyundai-motor.png)
 
 -   HyudaniMotor 클래스는 move 메서드를 실행할 때 안전을 위해 문(Door 클래스)이 닫혀 있는지 조사할 필요가 있다.
 -   엘리베이터가 이미 이동 중이면 모터를 구동시킬 필요가 없다.
@@ -35,11 +35,11 @@
 
 **Enumeration 인터페이스인 MotorStatus, DoorStatus, Direction의 설계**
 
-[##_Image|kage@lnixJ/btq6KQlb7jf/JFmmXd6csBo4xABnIqig21/img.png|alignCenter|data-origin-width="816" data-origin-height="228" data-ke-mobilestyle="widthOrigin"|Enumeration 인터페이스인 MotorStatus, DoorStatus, Direction의 설계||_##]
+![Enumeration 인터페이스인 MotorStatus, DoorStatus, Direction의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/motor-door-direction_status.png)
 
 **HyundaiMotor 클래스의 move 메서드 관계**
 
-[##_Image|kage@M8QG8/btq6MzQxbyo/ueE0pClqB4oQZnITkYjZK1/img.png|alignCenter|data-origin-width="698" data-origin-height="596" data-filename="hyundai-motor-move_method.png" data-ke-mobilestyle="widthOrigin"|HyundaiMotor 클래스의 move 메서드 관계||_##]
+![HyundaiMotor 클래스의 move 메서드 관계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/hyundai-motor-move_method.png)
 
 1.  HyundaiMotor 클래스의 move 메서드는 우선 getMotorStatus 메서드를 호출해 모터의 상태를 조회한다.
 2.  모터가 이미 동작중이면 move 메서드의 실행을 종료한다.
@@ -50,7 +50,7 @@
 
 **현대 모터를 구동시키는 HyundaiMotor 클래스 설계 기반 코드**
 
-```
+```java
 public enum DoorStatus {
 	CLOSED, OPENED
 }
@@ -60,7 +60,7 @@ public enum MotorStatus {
 }
 ```
 
-```
+```java
 public class Door {
 	private DoorStatus doorStatus;
 
@@ -85,7 +85,7 @@ public class Door {
 
 ```
 
-```
+```java
 public class HyundaiMotor {
 	private Door door;
 	private MotorStatus motorStatus;
@@ -129,7 +129,7 @@ public class HyundaiMotor {
 }
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -148,7 +148,7 @@ public class Client {
 
 **LGMotor 클래스의 구현**
 
-```
+```java
 public class LGMotor {
 	private Door door;
 	private MotorStatus motorStatus;
@@ -199,11 +199,11 @@ LGMotor 클래스의 HyudaiMotor 클래스를 비교해보면 여러 개의 메�
 
 **HyundaiMotor와 LGMotor 클래스의 상위 클래스인 Motor의 정의**
 
-[##_Image|kage@rGJjo/btq6Rb8vGjA/QovHbovEyeUTXxV5JrezN0/img.png|alignCenter|data-origin-width="1009" data-origin-height="498" data-filename="motor_solution_classDiagram.png" data-ke-mobilestyle="widthOrigin"|HyundaiMotor와 LGMotor 클래스의 상위 클래스인 Motor의 정의||_##]
+![HyundaiMotor와 LGMotor 클래스의 상위 클래스인 Motor의 정의](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/motor_solution_classDiagram.png)
 
 **HyundaiMotor와 LGMotor 클래스의 상위 클래스인 Motor의 정의 기반 구현**
 
-```
+```java
 public abstract class Motor {	// HyundaiMotor와 LGMotor에 공통적인 기능을 구현하는 클래스
 	protected Door door;
 	private MotorStatus motorStatus;
@@ -224,7 +224,7 @@ public abstract class Motor {	// HyundaiMotor와 LGMotor에 공통적인 기능�
 }
 ```
 
-```
+```java
 public class HyundaiMotor extends Motor{
 	
 	
@@ -259,7 +259,7 @@ public class HyundaiMotor extends Motor{
 }
 ```
 
-```
+```java
 public class LGMotor extends Motor{
 	
 	
@@ -303,7 +303,7 @@ LGMotor 클래스의 move 메서드와 HyundaiMotor 클래스의 move 메서드�
 
 **1\. HyundaiMotor 클래스**
 
-```
+```java
 public void move(Direction direction)
 {
 	MotorStatus motorStatus = getMotorStatus();
@@ -325,7 +325,7 @@ public void move(Direction direction)
 
 **2\. LGMotor 클래스**
 
-```
+```java
 public void move(Direction direction)
 {
 	MotorStatus motorStatus = getMotorStatus();
@@ -354,13 +354,13 @@ HyundaiMotor 클래스와 LGMotor 클래스의 move 메서드처럼 완전히 �
 
 **move 메서드의 중복 코드를 최소화한 설계**
 
-[##_Image|kage@bHyoru/btq6MTH3tKc/jpWawVlulcE6CxZh6CULt0/img.png|alignCenter|data-origin-width="1013" data-origin-height="543" data-filename="motor_solution_classDiagram2.png" data-ke-mobilestyle="widthOrigin"|move 메서드의 중복 코드를 최소화한 설계||_##]
+![move 메서드의 중복 코드를 최소화한 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter11_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/motor_solution_classDiagram2.png)
 
 두 클래스(HyundaiMotor와 LGMotor)의 move 메서드에서 다른 부분은 moveMotor 메서드 호출로 대체하였다. moveMotor 메서드의 구현이 HyundaiMotor와 LGMotor에 따라 달라야 하므로 moveMotor 메서드는 Motor 클래스에서 추상(Abstract) 메서드로 정의한 후 각 하위 클래스에서 적절하게 오버라이드되도록 한다. **즉, HyundaiMotor 클래스는 moveMotor 메서드를 오버라이드하면서 현대 모터를 구동하는 코드를 작성하고 LGMotor 클래스의 moveMotor 메서드는 LG 모터를 구동하는 코드를 작성한다.**
 
 **move 메서드의 중복 코드를 최소화한 설계 기반 코드**
 
-```
+```java
 public abstract class Motor {	// HyundaiMotor와 LGMotor에 공통적인 기능을 구현하는 클래스
 	protected Door door;
 	private MotorStatus motorStatus;
@@ -401,7 +401,7 @@ public abstract class Motor {	// HyundaiMotor와 LGMotor에 공통적인 기능�
 }
 ```
 
-```
+```java
 public class HyundaiMotor extends Motor{
 	
 	
@@ -417,7 +417,7 @@ public class HyundaiMotor extends Motor{
 }
 ```
 
-```
+```java
 public class LGMotor extends Motor{
 	
 	
