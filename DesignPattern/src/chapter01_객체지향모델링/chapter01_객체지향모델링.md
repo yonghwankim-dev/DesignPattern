@@ -24,25 +24,25 @@
 -   한 클래스가 다른 클래스에서 제공하는 기능을 사용하는 상황
     -   예를 들어 Professor 클래스는 필드로 student 인스턴스를 활용하여 Student 클래스의 기능을 호출한다.
 
-[##_Image|kage@bem0Go/btq4ygyVroa/hjlEIkfuwoaEZTH7uFWdY0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|Professor 클래스와 Student 클래스간의 연관 관계 표현||_##]
+![Professor 클래스와 Student 클래스간의 연관 관계 표현](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/01_Professor-Student_relation.png)
 
 -   **단방향 연관 관계(Unidirectional Association)**
     -   한쪽으로만 방향성이 있는 연관 관계, 화살표를 지목당한 클래스는 지목한 클래스를 알지 못한다.
     -   예를 들어 Student 클래스는 Course 클래스를 알골 있지만 Course 클래스는 Student 클래스를 알지 못한다.
 
-[##_Image|kage@UDcT2/btq4CrfDgv4/sKLluECgtHOG9SkXkv2BSK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|Student 클래스는 메소드의 인자를 통해서 Course 클래스를 알고 있는 단방향 연관 관계 표현||_##]
+![Student 클래스는 메소드의 인자를 통해서 Course 클래스를 알고 있는 단방향 연관 관계 표현](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/02_Student-Course_UnidirectionalAssociation.png)
 
 -   양방향 연관 관계(Bidirectional Association)
     -   양방향 연관 관계는 서로의 클래스가 존재를 알고 있다.
     -   M:N 양방향 연관 관계같은 경우 구현하기가 복잡하여 1:N 단방향 연관 관계로 변환하여 구현한다.
-        -   예를 들어 Student 클래스는 여러개의 Course 클래스를 수강이 가능하고 Course 클래스에도 여러명의 학생이 존재할 수 있다.  ![](https://blog.kakaocdn.net/dn/b2NLW2/btq4s2akxSU/Zrgt7Y9ceKW8yzk2YX2LBK/img.png)
-            -   아래와 같이 중간에 Transcript 클래스를 두어 M:N 양방향 연관 관계를 1:N, N:1 단방향 연관 관계로 변환한다.![](https://blog.kakaocdn.net/dn/byexuK/btq4F7AsVrw/XxZIyXEYH2x11MS8YcjofK/img.png)
+        -   예를 들어 Student 클래스는 여러개의 Course 클래스를 수강이 가능하고 Course 클래스에도 여러명의 학생이 존재할 수 있다.  ![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/03_Student-Course_BidirectionalAssociation.png)
+            -   아래와 같이 중간에 Transcript 클래스를 두어 M:N 양방향 연관 관계를 1:N, N:1 단방향 연관 관계로 변환한다.![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/04_Student-Course_BidirectionalAssociation.png)
 -   재귀적 연관 관계(Recursion Association)
     -   같은 클래스들끼리 연관 관계를 갖고 있으며 상하 관계가 존재하고 사이클이 존재하지 않는다. ![](https://blog.kakaocdn.net/dn/AnrOa/btq4EcPzjGM/L1Zk9RKvdbZiGhMHlSadN0/img.png)
 
 **일반화 관계(Generalization)**
 
--   하나의 클래스가 다른 클래스를 포함하는 상위 개념일때 구성되는 관계 ![](https://blog.kakaocdn.net/dn/zGg04/btq4EsZehfD/MzNhsDMiy6cdYcPiCUoqc1/img.png)
+-   하나의 클래스가 다른 클래스를 포함하는 상위 개념일때 구성되는 관계 ![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/05_RecursionAssociation.png)
 
 **집합 관계(Composition, Aggregation)**
 
@@ -52,7 +52,7 @@
     -   전체 객체와 부분 객체가 독립적
     -   전체 객체가 메모리에서 사라져도 부분 객체는 사라지지 않는다.
 
-```
+```java
 public class Computer{
 	private MainBoard mb;
     private CPU c;
@@ -72,9 +72,9 @@ public class Computer{
 
 -   **합성 관계(Composition)**
     -   부분 객체가 전체 객체에게 의존적
-    -   전체 객체가 메모리에서 사라지면 부분 객체도 삭제 ![](https://blog.kakaocdn.net/dn/UWJPo/btq4CsZXYrv/7pFeqXlEQ0SKLWM8kdB8jK/img.png)
+    -   전체 객체가 메모리에서 사라지면 부분 객체도 삭제 ![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/07_Composition.png)
 
-```
+```java
 public class Computer{
 	private MainBoard mb;
     private CPU c;
@@ -101,9 +101,9 @@ public class Computer{
     -   기능의 매개변수로 사용
     -   메서드 내부의 지역 객체로 사용
     
-    ![](https://blog.kakaocdn.net/dn/nydwU/btq4HG3PASR/J1I9y8qxgXKBc3uDB91JL1/img.png)
+    ![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/08_Dependency.png)
 
-```
+```java
 public class Car{
 	...
     public void fillGas(GasPump p){
@@ -124,7 +124,7 @@ public class Car{
     
     -   예를 들어 비행기(Plane)과 새(Bird)는 공통적으로 날 수 있는 능력이 존재함. 공통 능력(Flayable)이라는 관점에서 아래와 같이 비행기와 새를 그룹화 할 수 있는 메커니즘이 바로 인터페이스이다.
     
-    ![](https://blog.kakaocdn.net/dn/dcZvAF/btq4yjXpZtP/TkG1mPW4CiZsXhSOq4jCK1/img.png)
+    ![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter01_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%AA%A8%EB%8D%B8%EB%A7%81/diagram/09_Interface.png)
 -   **인터페이스는 실체화된 클래스들의 공통된 기능들을 그룹화 한 것을 의미**
 -   **실체화는 인터페이스를 기반으로 실제 생성된 클래스를 의미**
 
