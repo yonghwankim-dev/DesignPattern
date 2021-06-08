@@ -26,7 +26,7 @@
 
 예를 들어 Student 클래스의 책임이 다음과 같다고 가정한다.
 
-```
+```java
 // 학생 클래스는 현재 너무나 많은 책임을 가지고 있다.
 public class Student {
 	
@@ -81,7 +81,7 @@ public class Student {
 
 위와 같이 책임을 많이 질수록 클래스 내부에서 서로 다른 역할을 수행하는 코드끼리 강하게 결합될 가능성이 높아진다.
 
-![](https://blog.kakaocdn.net/dn/kInmG/btq4SNh3JBi/uRnidZj3iiCf77V1KZ2qAk/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/01_side-effect.png)
 
 **3.1.3 책임 분리**
 
@@ -126,7 +126,7 @@ Student 클래스의 변경 사유가 될 수 있는 것
 
 예를 들어 데이터베이스 스키마가 변화되면 학생 DAO 클래스나 이를 사용하는 클래스만이 영향을 받는다.
 
-![](https://blog.kakaocdn.net/dn/bepTvF/btq4PaMoqxR/2ZPcKaKbER0or2oDEYPjJK/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/02_studentDAO.png)
 
 3.1.4 산탄총 수술
 
@@ -141,7 +141,7 @@ Student 클래스의 변경 사유가 될 수 있는 것
 -   시스템의 핵심 기능(하나의 책임) 안에 포함되는 부가 기능(여러 개의 클래스로 분리)이다.
 -   부가 기능에 변경 사항이 발생하면 부가 기능을 실행하는 모든 핵심 기능에도 변경 사항이 적용되어야 한다는 의미이다.
 
-![](https://blog.kakaocdn.net/dn/qR9GN/btq4PaexNnR/A5CZye8HPtgtKyXhWJOfCk/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/03_CrossCuttingConcern.png)
 
 **3.1.5 관심지향 프로그래밍과 횡단 관심 문제**
 
@@ -159,7 +159,7 @@ Student 클래스의 변경 사유가 될 수 있는 것
 
 아래의 그림은 성적표나 출석부에 학생의 성적이나 출석 기록을 출력하는 기능에 대한 설계도이다.
 
-![](https://blog.kakaocdn.net/dn/rtGbs/btq4Sbcsx3Y/v9bDRXyjTmC0dq2YKN7yWk/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/04_OpenClosedPrinciple.png)
 
 위와 같은 설계에서 도서관 대여 명부와 같은 새로운 매체에 학생의 대여 기록을 출력하는 경우라면 어떻게 처리해야 하는가?
 
@@ -167,13 +167,13 @@ Student 클래스의 변경 사유가 될 수 있는 것
 
 위와 같은 추가적인 기능은 다음과 같이 대여 기록을 출력하는 매체(도서관 대여 명부 클래스)가 아래와 같이 변경되어야 한다.
 
-![](https://blog.kakaocdn.net/dn/cmJhWh/btq4QQ7WrA1/ixrl01PeB56UrKpm3dtgGK/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/05_OpenClosedPrinciple2.png)
 
 위의 그림과 같이 새로운 출력 매체를 표현하는 인터페이스(printSutdnet)를 추가하게 하고 변경이 있더라도 SomeClient 클래스가 개별적인 클래스(성적표, 도서관 대여 명부, 출석표)를 처리하도록 하지 않고 위의 그림처럼 인터페이스에서 구체적인 출력 매체를 캡슐화해 처리하도록 한다.
 
 **개방-폐쇄 원칙(OCP, Open-Closed Principle)의 핵심 구조**
 
-![](https://blog.kakaocdn.net/dn/bUoaXH/btq4ROhLQYV/MXOIihZ7nBckce1xB0vRz1/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/06_OpenClosedPrinciple3.png)
 
 **3.3 리스코프 치환 원칙(LSP, Liskov Substituion Principle)**
 
@@ -185,7 +185,7 @@ Student 클래스의 변경 사유가 될 수 있는 것
 
 아래의 Bag 클래스는 가격을 설정하고 조회하는 성능을 가진다. 
 
-```
+```java
 public class Bag {
 	private int price;
 
@@ -205,7 +205,7 @@ public class Bag {
 
 \[객체.메서드(인자리스트)\]는 메서드가 실행된 후의 b객체를 나타낸다.
 
-```
+```java
 // 모든 Bag 객체 b의 모든 정수 값 p에 대해서
 [b.setPrice(p)].getPrice() == p
 ```
@@ -216,7 +216,7 @@ public class Bag {
 
 아래 코드는 Bag 클래스를 상속받아 가방 가격을 할인 받을 수 있게 하는 DiscountBag 클래스이다.
 
-```
+```java
 public class DiscountBag extends Bag{
 	private double discountedBag = 0;
 
@@ -261,7 +261,7 @@ DiscountBag 클래스는 할인율을 설정해서 할인된 가격을 계산하
 
 위와 같은 가정으로 인하여 로봇, 모형 자동차, 레고와 같은 구체적인 장난감은 변하기 쉬운 것이고, 아이가 장난감을 가지고 노는 사실은 변하기 어려운 것에 해당될 수 있다.
 
-![](https://blog.kakaocdn.net/dn/5CsWs/btq4RNDbDxY/WByl0QP4KyRBvP0K4kkKF1/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/07_DIP.png)
 
 따라서 추상 클래스 및 인터페이스는 변화가 없는것이고 일반 클래스는 변화가 쉬운 것임을 알 수 있다.
 
@@ -275,7 +275,7 @@ DiscountBag 클래스는 할인율을 설정해서 할인된 가격을 계산하
 
 **의존성 주입 BEFORE**
 
-```
+```java
 public class Kid {
 	private Robot toy;
 	
@@ -298,14 +298,14 @@ Kid 클래스는 play() 메서드를 통해서 장난감을 가지고 논다. �
 
 **의존성 주입 AFTER**
 
-```
+```java
 public abstract class Toy {
 	public abstract String toString();
 }
 
 ```
 
-```
+```java
 public class Lego extends Toy{
 
 	@Override
@@ -318,7 +318,7 @@ public class Lego extends Toy{
 
 ```
 
-```
+```java
 public class Kid {
 	private Toy toy;
 	
@@ -353,7 +353,7 @@ public class Kid {
 
 그리고 복합기 클래스를 필드멤버로 갖고 기능을 수행하는 클라이언 클래스(프린터, 복사, 팩스 클라이언트)가 존재한다고 가정한다.
 
-![](https://blog.kakaocdn.net/dn/qieSH/btq4R2AzVEX/f1t3bsqZJANZhghRlyCul1/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/08_ISP.png)
 
 위의 그림과 같은 복합기 클래스는 매우 비대해질 가능성이 크다. 왜냐하면 복합기라는 클래스 하나에 수 많은 기능이 추가될 수 있기 때문이다. 하지만 복합기 클래스는 모든 기능을 클라이언트가 동시에 사용하는 경우는 거의 없다. **즉, 프린터 클라이언트는 팩스 클라이언트의 변경으로 인해 영향을 받지 않아야 한다.**
 
@@ -363,7 +363,7 @@ public class Kid {
 
 **복합기 클래스에 인터페이스 분리 원칙 적용 결과**
 
-![](https://blog.kakaocdn.net/dn/ovW3p/btq4WF42Y3G/RRWbK1FHDObkXqGNwl3qU1/img.png)
+![](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter03_SOLID%EC%9B%90%EC%B9%99/diagram/08_ISP2.png)
 
 위와 같이 설계하면 인터페이스가 일종의 방화벽 역할을 수행하여 클라이언트는 자신이 사용하지 않는 메서드에 생긴 변화로 인한 영향을 받지 않는다.
 
