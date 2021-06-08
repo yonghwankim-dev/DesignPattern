@@ -8,7 +8,7 @@
 
 **데커레이터 패턴의 컬레보레이션**
 
-[##_Image|kage@ccOC3j/btq6Gpf3sZt/U7fkVfqKhnVcE6Ej4HEXw1/img.png|alignCenter|data-origin-width="1198" data-origin-height="592" data-ke-mobilestyle="widthOrigin"|데커레이터 패턴의 컬레보레이션||_##]
+![데커레이터 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/decorator-pattern_collaboration.png)
 
 -   **Component** : 기본 기능을 뜻하는 ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의한다. 즉, 클라이언트는 Component를 통해 실제 객체를 사용한다.
 -   **ConcreteComponent** : 기본 기능을 구현하는 클래스다.
@@ -17,7 +17,7 @@
 
 **데커레이터 패턴의 순차 다이어그램**
 
-[##_Image|kage@byVO4i/btq6JnoqLvc/6gV21ykyQb5OqAB0aijs7k/img.png|alignCenter|data-origin-width="1171" data-origin-height="438" data-ke-mobilestyle="widthOrigin"|데커레이터 패턴의 순차 다이어그램||_##]
+![데커레이터 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/decorator-pattern_seq.png)
 
 Client가 객체 b의 operation 메서드를 호출하면 객체 b가 가리키는 Component, 즉 ConcreteDecoratorA 객체 a의 operation을 호출한다. 객체 a 역시 자신이 가리키는 Component, 즉 ConcreteComponent 객체 c의 operation 메서드를 호출한 후 자신의 addedBehavior 메서드를 호출한다.
 
@@ -32,11 +32,11 @@ Client가 객체 b의 operation 메서드를 호출하면 객체 b가 가리키�
 
 **기본 도로 및 차선을 표시하는 RoadDisplay와 RoadDisplayWithLane 클래스의 설계**
 
-[##_Image|kage@6pQj0/btq6DDeSRhz/havRN9eLpJMTwBOGgOIUek/img.png|alignCenter|data-origin-width="378" data-origin-height="359" data-ke-mobilestyle="widthOrigin"|기본 도로 및 차선을 표시하는 RoadDisplay와 RoadDisplayWithLane 클래스의 설계||_##]
+![기본 도로 및 차선을 표시하는 RoadDisplay와 RoadDisplayWithLane 클래스의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/roadDisplay-RoadDisplayWithLane.png)
 
 **기본 도로 및 차선을 표시하는 RoadDisplay와 RoadDisplayWithLane 클래스의 설계 기반 코드**
 
-```
+```java
 public class RoadDisplay {	// 기본 도로 표시 클래스
 	public void draw()
 	{
@@ -45,7 +45,7 @@ public class RoadDisplay {	// 기본 도로 표시 클래스
 }
 ```
 
-```
+```java
 public class RoadDisplayWithLane extends RoadDisplay {
 
 	@Override
@@ -65,7 +65,7 @@ public class RoadDisplayWithLane extends RoadDisplay {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -82,7 +82,7 @@ public class Client {
 
 ```
 
-```
+```java
 기본 도로 표시
 기본 도로 표시
 교통량 표시
@@ -104,11 +104,11 @@ RoadDisplayWithTraffic 클래스는 도로에 교통량을 추가로 표시하�
 
 기본 도로 및 교통량을 표시하는 RoadDisplayWithTraffic 클래스의 설계
 
-[##_Image|kage@bm2Ia3/btq6DBVTmuF/ZuW7NSa1rb4cv5zFkTALC1/img.png|alignCenter|data-origin-width="747" data-origin-height="383" data-ke-mobilestyle="widthOrigin"|기본 도로 및 교통량을 표시하는 RoadDisplayWithTraffic 클래스의 설계||_##]
+![기본 도로 및 교통량을 표시하는 RoadDisplayWithTraffic 클래스의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/roadDisplay-RoadDisplayWithTraffic.png)
 
 기본 도로 및 교통량을 표시하는 RoadDisplayWithTraffic 클래스의 설계 기반 코드
 
-```
+```java
 public class RoadDisplayWithTraffic extends RoadDisplay {
 
 	@Override
@@ -142,7 +142,7 @@ RoadDisplay 클래스의 하위 클래스로 도로 표시에 기능(예: 차선
 
 **개선된 추가 기능 조합의 설계**
 
-[##_Image|kage@WgzFU/btq6KQYAIwW/hyeK0ZqB6X4rVRPNbYEhS1/img.png|alignCenter|data-origin-width="1090" data-origin-height="566" data-ke-mobilestyle="widthOrigin"|개선된 추가 기능 조합의 설계||_##]
+![개선된 추가 기능 조합의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/DisplayDecorator.png)
 
 기본 기능만 이용할 때는 RoadDisplay 클래스의 객체를 생성하면 충분하다. 하지만 차선을 표시하는 기능이 추가적으로 필요하다면 LaneDecorator 클래스의 객체가 필요하다. 이때 LaneDecorator에서는 차선 표시 기능만 직접 제공하고 도로 표시 기능은 RoadDisplay 클래스의 draw 메서드를 호출하는 방식으로 구현한다.
 
@@ -150,13 +150,13 @@ LaneDecorator 클래스는 RoadDisplay 객체에 대한 참조가 필요한데, 
 
 **개선된 추가 기능 조합의 설계 기반 코드**
 
-```
+```java
 public abstract class Display {
 	public abstract void draw();
 }
 ```
 
-```
+```java
 public class RoadDisplay extends Display{	// 기본 도로 표시 클래스
 	public void draw()
 	{
@@ -165,7 +165,7 @@ public class RoadDisplay extends Display{	// 기본 도로 표시 클래스
 }
 ```
 
-```
+```java
 public abstract class DisplayDecorator extends Display {
 	private Display decoratedDisplay;
 	
@@ -181,7 +181,7 @@ public abstract class DisplayDecorator extends Display {
 }
 ```
 
-```
+```java
 public class LaneDecorator extends DisplayDecorator{
 
 	public LaneDecorator(Display decoratedDisplay) {
@@ -202,7 +202,7 @@ public class LaneDecorator extends DisplayDecorator{
 }
 ```
 
-```
+```java
 public class TrafficDecorator extends DisplayDecorator{
 
 	public TrafficDecorator(Display decoratedDisplay) {
@@ -224,7 +224,7 @@ public class TrafficDecorator extends DisplayDecorator{
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -246,7 +246,7 @@ public class Client {
 }
 ```
 
-```
+```java
 기본 도로 표시
 기본 도로 표시
 	차선 표시
@@ -262,7 +262,7 @@ public class Client {
 
 **roadWithLane 객체의 draw 메서드 동작**
 
-[##_Image|kage@bc18NF/btq6CPGz49R/k2ik2xTuzI1G7eQkW5qkr0/img.png|alignCenter|data-origin-width="910" data-origin-height="444" data-ke-mobilestyle="widthOrigin"|roadWithLane 객체의 draw 메서드 동작||_##]
+![roadWithLane 객체의 draw 메서드 동작](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter10_%EB%8D%B0%EC%BB%A4%EB%A0%88%EC%9D%B4%ED%84%B0%ED%8C%A8%ED%84%B4/diagram/roadWithLane-draw-seq.png)
 
 1.  LaneDecorator 클래스 객체의 draw 메서드는 먼저 RoadDisplay 클래스의 draw 메서드를 호출해야 한다.
 2.  이는 LaneDecorator 클래스의 상위 클래스인 DisplayDecorator 클래스의 draw 메서드를 호출해 DisplayDecorator 클래스를 가리키는 decoratedDisplay 객체를 호출함으로써 실행된다.
