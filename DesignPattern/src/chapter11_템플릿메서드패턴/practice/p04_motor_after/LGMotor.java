@@ -14,8 +14,4 @@ public class LGMotor extends Motor{
 		// TODO Auto-generated method stub
 		// LGMotor∏¶ ±∏µøΩ√≈¥
 	}
-
-
-	
-	
 }

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_03.computer.computerDevice.Body"/>
-    <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_03.computer.computerDevice.Keyboard"/>
-    <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_03.computer.computerDevice.Monitor"/>
-    <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_03.computer.Computer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_04.Directory"/>
     <fullyQualifiedTypeName name="chapter14_컴퍼지트패턴.ch14_04.AbstractFile"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="chapter08_커맨드패턴.exercise.ex03.command.Direction"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.practice.p04_improve_score.observer.Observer"/>
     <fullyQualifiedTypeName name="chapter09_옵서버패턴.practice.p04_improve_score.observer.Subject"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ElevatorScheduler"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.SchedulerFactory"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.ElevatorManager"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ScheulingStrategyID"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.Direction"/>
 </qualifiedTypeNameHistroy>

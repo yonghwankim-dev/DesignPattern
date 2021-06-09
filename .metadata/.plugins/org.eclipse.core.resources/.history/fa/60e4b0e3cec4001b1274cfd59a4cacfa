@@ -1,5 +1,0 @@
-package chapter09_옵서버패턴.practice.p04_improve_score.observer;
-
-public interface Observer {
-	public abstract void update();
-}
