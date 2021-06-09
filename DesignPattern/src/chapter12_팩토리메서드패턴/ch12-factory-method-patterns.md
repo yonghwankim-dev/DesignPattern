@@ -4,7 +4,7 @@
 
 **팩토리 메서드 패턴의 개념**
 
-[##_Image|kage@dNtJr7/btq6RI0OoPy/MeEtNenBcs8a39hZuNxl7k/img.png|alignCenter|data-origin-width="1452" data-origin-height="1073" data-ke-mobilestyle="widthOrigin"|팩토리 메서드 패턴의 개념||_##]
+![팩토리 메서드 패턴의 개념](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/05_factory-method-pattern_concept.png)
 
 위 그림의 왼쪽처럼 여러 개의 클래스(클래스 A, 클래스 Z 등)에서 필요에 따라 클래스 X1의 객체와 클래스 X2의 객체를 생성해 사용한다. 만약 X1과 X2를 생성하는 방식이 달라지거나 X3와 같이 새로운 클래스의 객체를 생성해야 하는 경우에는 X1과 X2를 생성하는 모든 코드 부분을 변경해야 한다.
 
@@ -16,7 +16,7 @@
 
 **상속을 이용한 팩토리 메서드 패턴의 적용**
 
-[##_Image|kage@xKob0/btq6RHgycxe/3Qjsx9TKPKkGXRdWK6Ecn0/img.png|alignCenter|data-origin-width="892" data-origin-height="593" data-ke-mobilestyle="widthOrigin"|상속을 이용한 팩토리 메서드 패턴의 적용||_##]
+![상속을 이용한 팩토리 메서드 패턴의 적용](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/06_factory-method-pattern_apply_usingGeneralization.png)
 
 -   ElevatorManagerWithThroughputScheduling 클래스 : 최대 처리량 전략을 사용하는 클래스
 -   ElevatorManagerWithResponseTimeScheduling 클래스 : 최소 대기 시간 전략을 사용하는 클래스
@@ -27,7 +27,7 @@
 
 **상속을 이용한 팩토리 메서드 패턴의 적용 기반 구현**
 
-```
+```java
 public abstract class ElevatorManager {
 	private List<ElevatorController> controllers;
 	
@@ -54,7 +54,7 @@ public abstract class ElevatorManager {
 }
 ```
 
-```
+```java
 public class ElevatorManagerWithThroughputScheduling extends ElevatorManager{
 
 	public ElevatorManagerWithThroughputScheduling(int controllerCount) {
@@ -69,7 +69,7 @@ public class ElevatorManagerWithThroughputScheduling extends ElevatorManager{
 }
 ```
 
-```
+```java
 public class ElevatorManagerWithResponseTimeScheduling extends ElevatorManager{
 
 	public ElevatorManagerWithResponseTimeScheduling(int controllerCount) {
@@ -84,7 +84,7 @@ public class ElevatorManagerWithResponseTimeScheduling extends ElevatorManager{
 }
 ```
 
-```
+```java
 public class ElevatorManagerWithDynamicScheduling extends ElevatorManager{
 
 	public ElevatorManagerWithDynamicScheduling(int controllerCount) {
@@ -111,7 +111,7 @@ public class ElevatorManagerWithDynamicScheduling extends ElevatorManager{
 }
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -129,7 +129,7 @@ public class Client {
 }
 ```
 
-```
+```java
 chapter12_팩토리메서드패턴.practice.p04_elevator_after2.scheduler_strategy.ResponseTimeScheduler@30f39991
 Elevator [2] Floor: 1 ==> 10
 chapter12_팩토리메서드패턴.practice.p04_elevator_after2.scheduler_strategy.ThroughputScheduler@4f3f5b24
@@ -147,7 +147,7 @@ Elevator [1] Floor: 1 ==> 10
 
 **팩토리 메서드 패턴의 컬레보레이션**
 
-[##_Image|kage@cUzXqU/btq6VEprrSY/BtgLWhVLu9n4zJps4lhEa0/img.png|alignCenter|data-origin-width="1212" data-origin-height="594" data-ke-mobilestyle="widthOrigin"|팩토리 메서드 패턴의 컬레보레이션||_##]
+![팩토리 메서드 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/07_factory-method-pattern_collaboration.png)
 
 -   Product : 팩토리 메서드로 생성될 객체의 공통 인터페이스
 -   ConcreteProduct : 구체적으로 객체가 생성되는 클래스
@@ -156,7 +156,7 @@ Elevator [1] Floor: 1 ==> 10
 
 **팩토리 메서드 패턴을 엘리베이터 예제에 적용한 경우**
 
-[##_Image|kage@cjCK9V/btq6VqSrSud/Yl57rK4zD34kebQKY8uWuk/img.png|alignCenter|data-origin-width="1521" data-origin-height="667" data-ke-mobilestyle="widthOrigin"|팩토리 메서드 패턴을 엘리베이터 예제에 적용한 경우||_##]
+![팩토리 메서드 패턴을 엘리베이터 예제에 적용한 경우](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/08_factory-method-pattern.png)
 
 -   ElevatorScheduler 인터페이스 : Product
 -   ResponseTimeScheduler, ThroughputScheduler 클래스 : ConcreteProduct
@@ -177,7 +177,7 @@ Elevator [1] Floor: 1 ==> 10
 
 **작업 처리량(Throughput)을 기준으로 한 스케줄링에 따른 엘리베이터 관리**
 
-[##_Image|kage@PQzs5/btq6V4PyqAS/WuslbH5z0ka3gBkP1Gsq20/img.png|alignCenter|data-origin-width="964" data-origin-height="439" data-ke-mobilestyle="widthOrigin"|작업 처리량(Throughput)을 기준으로 한 스케줄링에 따른 엘리베이터 관리||_##]
+![작업 처리량(Throughput)을 기준으로 한 스케줄링에 따른 엘리베이터 관리](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/01_elevator-scheduling_Throughtput.png)
 
 -   ElevatorManager 클래스
     -   이동 요청을 처리하는 클래스로 엘리베이터를 스케줄링(엘리베이터 선택)하기 위한 ThroughputScheduler 객체를 갖는다.
@@ -187,7 +187,7 @@ Elevator [1] Floor: 1 ==> 10
 
 **작업 처리량(Throughput)을 기준으로 한 스케줄링에 따른 엘리베이터 관리 기반 구현**
 
-```
+```java
 public class ElevatorManager {
 	private List<ElevatorController> controllers;
 	private ThroughputScheduler scheduler;
@@ -215,7 +215,7 @@ public class ElevatorManager {
 
 ```
 
-```
+```java
 public class ElevatorController {
 	private int id;			// 엘리베이터 ID
 	private int curFloor;	// 현재 층
@@ -239,14 +239,14 @@ public class ElevatorController {
 
 ```
 
-```
+```java
 public enum Direction {
 	UP, DOWN
 }
 
 ```
 
-```
+```java
 public class ThroughputScheduler {
 	public int selectElevator(ElevatorManager manager, int destination, Direction direction)
 	{
@@ -266,7 +266,7 @@ public class ThroughputScheduler {
 
 **동적 스케줄링을 지원하는 수정된 ElevatorManager 클래스 코드**
 
-```
+```java
 public class ElevatorManager {
 	private List<ElevatorController> controllers;
 	
@@ -318,7 +318,7 @@ public class ElevatorManager {
 
 **스트래티지 패턴을 활용한 엘리베이터 스케줄링 전략 설계**
 
-[##_Image|kage@F2MVc/btq6Vh9FEaR/DnZsZuIt9dD0dU8xlUi7c1/img.png|alignCenter|data-origin-width="1240" data-origin-height="600" data-ke-mobilestyle="widthOrigin"|스트래티지 패턴을 활용한 엘리베이터 스케줄링 전략 설계||_##]
+![스트래티지 패턴을 활용한 엘리베이터 스케줄링 전략 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/02_elevator-scheduling_strategy-pattern.png)
 
 **하지만** **문제점은 ElevatorManager 클래스는 엘리베이터 스케줄링 전략이 변경될 때마다 requestElevator 메서드도 수정되어야 한다.** 예를 들면 다음과 같다.
 
@@ -331,13 +331,13 @@ public class ElevatorManager {
 
 **SchedulerFactory를 이용한 스케줄링 전략 객체의 생성**
 
-[##_Image|kage@LgLhL/btq6SwzAC44/SsifXKcEBtZherdKDySCX1/img.png|alignCenter|data-origin-width="1176" data-origin-height="656" data-ke-mobilestyle="widthOrigin"|SchedulerFactory를 이용한 스케줄링 전략 객체의 생성||_##]
+![SchedulerFactory를 이용한 스케줄링 전략 객체의 생성](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/03_elevator-scheduling_usingSchedulerFactory.png)
 
 ElevatorManager 클래스가 지금처럼 직접 ThroughputScheduler 객체와 ResponseTimeScheduler 객체를 생성하는 대신 SchedulerFactory 클래스가 이들 객체를 생성하도록 변경한 설계이다.
 
 **SchedulerFactory를 이용한 스케줄링 전략 객체의 생성 기반 구현**
 
-```
+```java
 public enum ScheulingStrategyID {
 	RESPONSE_TIME, THROUGHPUT, DYNAMIC
 }
@@ -381,7 +381,7 @@ SchedulerFactory 클래스의 getScheduler 메서드는 인자로 주어진 Sche
 -   RESPONSE\_TIME : ResponseTimeScheduler 객체 생성
 -   DYNAMIC : 오전에는 ResponseTimeScheduler, 오후에는 ThroughputScheduler 객체 생성
 
-```
+```java
 public class ElevatorManager {
 	private List<ElevatorController> controllers;
 	private ScheulingStrategyID strategyID;
@@ -415,7 +415,7 @@ public class ElevatorManager {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -434,7 +434,7 @@ public class Client {
 
 ```
 
-```
+```java
 chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ResponseTimeScheduler@30f39991
 Elevator [1] Floor: 1 ==> 10
 chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ThroughputScheduler@4f3f5b24
@@ -450,13 +450,13 @@ ElevatorManager 클래스의 생성자에 SchedulingStrategyID 인자를 명시�
 
 **싱글턴 패턴을 적용한 스케줄링 전략 클래스의 설계**
 
-[##_Image|kage@cvZQfi/btq6WiNBYeU/toP0RZBDZL32ymjYbvkqs0/img.png|alignCenter|data-origin-width="1086" data-origin-height="620" data-ke-mobilestyle="widthOrigin"|싱글턴 패턴을 적용한 스케줄링 전략 클래스의 설계||_##]
+![싱글턴 패턴을 적용한 스케줄링 전략 클래스의 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter12_%ED%8C%A9%ED%86%A0%EB%A6%AC%EB%A9%94%EC%84%9C%EB%93%9C%ED%8C%A8%ED%84%B4/diagram/04_elevator-scheduling_singleton-pattern.png)
 
 ThroughputScheduler 클래스와 ResponseTimeScheduler 클래스의 생성자는 각각 private로 정의된다. 대신 getInstance 정적 메소드를 통하여 객체 생성을 한다.
 
 **싱글턴 패턴을 적용한 스케줄링 전략 클래스의 설계 기반 구현**
 
-```
+```java
 public class SchedulerFactory {
 	public static ElevatorScheduler getScheduler(ScheulingStrategyID strategyID)
 	{
@@ -488,7 +488,7 @@ public class SchedulerFactory {
 
 ```
 
-```
+```java
 public class ThroughputScheduler implements ElevatorScheduler{
 	private static ElevatorScheduler scheduler;
 	
@@ -514,7 +514,7 @@ public class ThroughputScheduler implements ElevatorScheduler{
 }
 ```
 
-```
+```java
 public class ResponseTimeScheduler implements ElevatorScheduler {
 	
 	private static ElevatorScheduler scheduler;
@@ -541,7 +541,7 @@ public class ResponseTimeScheduler implements ElevatorScheduler {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -560,7 +560,7 @@ public class Client {
 
 ```
 
-```
+```java
 chapter12_팩토리메서드패턴.practice.p04_elevator_after2.scheduler_strategy.ResponseTimeScheduler@30f39991
 Elevator [2] Floor: 1 ==> 10
 chapter12_팩토리메서드패턴.practice.p04_elevator_after2.scheduler_strategy.ThroughputScheduler@4f3f5b24
