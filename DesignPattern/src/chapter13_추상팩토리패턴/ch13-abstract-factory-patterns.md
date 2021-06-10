@@ -10,7 +10,7 @@
 
 **추상 팩토리 패턴의 컬레보레이션**
 
-[##_Image|kage@46azf/btq6U1GavKp/xDKMylumfc9kJpN7Uo2qP0/img.png|alignCenter|data-origin-width="1157" data-origin-height="641" data-ke-mobilestyle="widthOrigin"|추상 팩토리 패턴의 컬레보레이션||_##]
+![추상 팩토리 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/07_abstract-factory-pattern_collaboration.png)
 
 -   **AbstractFactory** : 실제 팩토리 클래스의 공통 인터페이스, 각 제품의 부품을 생성하는 기능을 추상 메서드로 정의한다.
 -   **ConcreteFactory** : 구체적인 팩토리 클래스로 AbstractFactory 클래스의 추상 메서드를 오버라이드함으로써 구체적인 제품을 생성한다.
@@ -19,7 +19,7 @@
 
 **추상 팩토리 패턴의 순차 다이어그램**
 
-[##_Image|kage@nmdsp/btq6VIMFygh/Ng1EknKfAiOaPCa0up8SXk/img.png|alignCenter|data-origin-width="1194" data-origin-height="621" data-ke-mobilestyle="widthOrigin"|추상 팩토리 패턴의 순차 다이어그램||_##]
+![추상 팩토리 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/08_abstract-factory-pattern_seq.png)
 
 1.  ConcreteFactory1 객체를 이용하여 createProductA 메소드 호출
 2.  ConcreteProductA1 객체(a1) 생성
@@ -32,7 +32,7 @@ Clinet 클래스는 ConcreteFactory1 클래스의 createProductA 메소드를 �
 
 **추상 팩토리 패턴을 엘리베이터 부품 업체 에제에 적용한 경우**
 
-[##_Image|kage@OFF2i/btq6Sxk3CWq/SkUKERDFsxzIQE8BpzGtkK/img.png|alignCenter|data-origin-width="1401" data-origin-height="512" data-ke-mobilestyle="widthOrigin"|||_##]
+![추상 팩토리 패턴을 엘리베이터 부품 업체 예제에 적용한 경우](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/09_apply_abstract-factory-pattern_elevator.png)
 
 -   ElevatorFactory 클래스 : AbstractFactory 역할
 -   LGElevatorFactory, HyundaiElevatorFactory 클래스 : ConcreteFactory 역할
@@ -51,11 +51,11 @@ Clinet 클래스는 ConcreteFactory1 클래스의 createProductA 메소드를 �
 
 **LG와 현대의 모터와 문**
 
-[##_Image|kage@bCdfEh/btq6VEX3U2D/y1xF9zhHTXmxSOH3Q9GlL0/img.png|alignCenter|data-origin-width="1206" data-origin-height="481" data-ke-mobilestyle="widthOrigin"|LG와 현대의 모터와 문||_##]
+![LG와 현대의 모터와 문](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/01_LG-Hyundai_Motor.png)
 
 **Motor의 핵심 기능 move 기능**
 
-```
+```java
 public void move(Direction direction){
     // 1) 이미 이동 중이면 무시한다.
     // 2) 만약 문이 열려 있으면 문을 닫는다.
@@ -68,7 +68,7 @@ public void move(Direction direction){
 
 **Door의 핵심 기능 open 기능**
 
-```
+```java
 public void open(){
     // 1) 이미 문이 열려 있으면 무시한다.
     // 2) 문을 닫는다.
@@ -80,7 +80,7 @@ Door 클래스의 경우에도 open과 close 메서드 각각에 템플릿 메�
 
 **템플릿 메서드 패턴을 적용한 Door, LGDoor, HyundaiDoor 클래스의 코드 구현**
 
-```
+```java
 public enum DoorStatus {
 	OPENED,CLOSED
 }
@@ -127,7 +127,7 @@ public abstract class Door {
 
 ```
 
-```
+```java
 public class LGDoor extends Door{
 
 	@Override
@@ -145,7 +145,7 @@ public class LGDoor extends Door{
 }
 ```
 
-```
+```java
 public class HyundaiDoor extends Door{
 
 	@Override
@@ -168,13 +168,13 @@ public class HyundaiDoor extends Door{
 
 **모터 객체 생성을 위한 MotorFactory 클래스**
 
-[##_Image|kage@cZVBSv/btq6ViAYBtJ/xTe4BJ4b3lXWaZX8coMdYk/img.png|alignCenter|data-origin-width="641" data-origin-height="498" data-ke-mobilestyle="widthOrigin"|모터 객체 생성을 위한 MotorFactory 클래스||_##]
+![모터 객체 생성을 위한 MotorFactory 클래스](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/02_motorFactory.png)
 
 MotorFactory 클래스의 createMotor 메소드는 VendorID 인자값에 따라 LGMotor 객체 또는 HyundaiMotor 객체를 생성한다.
 
 **모터 객체 생성을 위한 MotorFactory 클래스 구현**
 
-```
+```java
 public enum VendorID {
 	LG, HYUNDAI
 }
@@ -199,7 +199,7 @@ public class MotorFactory {
 }
 ```
 
-```
+```java
 public class DoorFactory {
 	// vendorID에 따라 LGMotor 또는 HyundaiMotor 객체를 생성함
 	public static Door createMotor(VendorID vendorID)
@@ -221,7 +221,7 @@ public class DoorFactory {
 }
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
@@ -235,7 +235,7 @@ public class Client {
 }
 ```
 
-```
+```java
 open LG Door
 close LG Door
 move LG Motor UP
@@ -250,7 +250,7 @@ move LG Motor UP
 
 엘리베이터 프로그램에서 현대의 부품, 즉, HyundaiMotor와 HyundaiDoor 객체를 사용하려면 MotorFactory와 DoorFactory 클래스를 이용하여 이미 정의된 HyundaiMotor 객체와 HyundaiDoor 객체를 생성하도록 프로그램을 수정한다.
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
@@ -268,7 +268,7 @@ public class Client {
 
 **13.3.2 새로운 제조 업체의 부품을 지원해야 하는 경우ㅇ**
 
-```
+```java
 public class DoorFactory {
 	// vendorID에 따라 LGMotor 또는 HyundaiMotor 객체를 생성함
 	public static Door createMotor(VendorID vendorID)
@@ -307,7 +307,7 @@ public class DoorFactory {
 
 **LGElevatorFactory와 HyundaiElevatorFactory 클래스를 이용한 설계**
 
-[##_Image|kage@HJttD/btq6WPxT6aa/oFmikKUXxLEGiaRsgdLiKk/img.png|alignCenter|data-origin-width="1156" data-origin-height="656" data-ke-mobilestyle="widthOrigin"|LGElevatorFactory와 HyundaiElevatorFactory 클래스를 이용한 설계||_##]
+![LGElevatorFactory와 HyundaiElevatorFactory 클래스를 이용한 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/03_ElevatorFactory.png)
 
 -   LGElevatorFactory : createMotor, createDoor 메소드를 통하여 LGMotor, LGDoor 객체 생성
 -   HyundaiElevatorFactory : createMotor, createDoor 메소드를 통하여 HyundaiMotor, HyundaiDoor 객체 생성
@@ -316,18 +316,18 @@ public class DoorFactory {
 
 **LGElevatorFactory와 HyundaiElevatorFactory 클래스의 일반화**
 
-[##_Image|kage@b5tIIb/btq6U9RDvub/KllcBMkBtEWKquD8uK9ijk/img.png|alignCenter|data-origin-width="593" data-origin-height="357" data-ke-mobilestyle="widthOrigin"|LGElevatorFactory와 HyundaiElevatorFactory 클래스의 일반화||_##]
+![LGElevatorFactory와 HyundaiElevatorFactory 클래스의 일반화](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/04_ElevatorFactory_generalization.png)
 
 **LGElevatorFactory와 HyundaiElevatorFactory 클래스의 일반화 구현**
 
-```
+```java
 public abstract class ElevatorFactory {	// 추상 부품을 생성하는 추상 팩토리
 	public abstract Motor createMotor();
 	public abstract Door createDoor();
 }
 ```
 
-```
+```java
 public class LGElevatorFactory extends ElevatorFactory{
 
 	@Override
@@ -345,7 +345,7 @@ public class LGElevatorFactory extends ElevatorFactory{
 }
 ```
 
-```
+```java
 public class HyundaiElevatorFactory extends ElevatorFactory{
 
 	@Override
@@ -364,7 +364,7 @@ public class HyundaiElevatorFactory extends ElevatorFactory{
 
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
@@ -394,7 +394,7 @@ public class Client {
 
 그리고 몇 가지 살펴봐야 할 부분이 존재한다. Client 클래스는 특정 제조 업체에 따라 적절한 Factory 클래스가 생성된 후에는 이 Factory 클래스를 이용해 구체적인 부품을 생성(createDoor, createMotor)한다. 이때 제조 업체별로 Factory 클래스를 생성하는 부분은 팩토리 메서드 패턴을 적용해 설계한 것이다. 즉, 구체적인 Factory 클래스를 생성하는 팩토리 메서드를 사용함으로써 제조 업체별 Factory 객체를 생성하는 방식을 캡슐화 할 수 있다.
 
-```
+```java
 if(vendorName.equalsIgnoreCase("LG"))	// 인자에 따라 LG 또는 현대 팩토리를 생성함
 {
 	factory = new LGElevatorFactory();
@@ -413,13 +413,13 @@ else
 
 **팩토리 메서드와 싱글턴 패턴을 적용한 제조 업체별 Factory 클래스 다이어그램**
 
-[##_Image|kage@rmqxN/btq6SvnoIK5/dogeYtvBQCvxSFHm18MVr0/img.png|alignCenter|data-origin-width="1012" data-origin-height="424" data-ke-mobilestyle="widthOrigin"|팩토리 메서드와 싱글턴 패턴을 적용한 제조 업체별 Factory 클래스 다이어그램||_##]
+![팩토리 메서드와 싱글턴 패턴을 적용한 제조 업체별 Factory 클래스 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter13_%EC%B6%94%EC%83%81%ED%8C%A9%ED%86%A0%EB%A6%AC%ED%8C%A8%ED%84%B4/diagram/06_factory-method_singleton-patterns.png)
 
 ElevatorFactoryFactory 클래스가 getFactory가 팩토리 메서드 역할을 한다. 그리고 각 제조 업체별 Factory 클래스는 싱글턴 패턴으로 설계한다.
 
 **팩토리 메서드와 싱글턴 패턴을 적용한 제조 업체별 Factory 클래스 다이어그램 구현**
 
-```
+```java
 public class ElevatorFactoryFactory {	// 팩토리 클래스에 팩토리 메서드 패턴을 적용함
 	public static ElevatorFactory getFactory(VendorID vendorID)
 	{
@@ -444,7 +444,7 @@ public class ElevatorFactoryFactory {	// 팩토리 클래스에 팩토리 메서
 }
 ```
 
-```
+```java
 public class LGElevatorFactory extends ElevatorFactory{
 	private static LGElevatorFactory factory;
 	
@@ -476,7 +476,7 @@ public class LGElevatorFactory extends ElevatorFactory{
 }
 ```
 
-```
+```java
 public class Client {
 	public static void main(String args[])
 	{
