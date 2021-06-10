@@ -1,0 +1,37 @@
+package chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.LG;
+
+import chapter13_추상팩토리패턴.ch13_04.Elevator.Factory.ElevatorFactory;
+import chapter13_추상팩토리패턴.ch13_04.Elevator.Motor.Abstract.Motor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.business.lg.LGDoor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.business.lg.LGMotor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.elevator.door.Abstract.Door;
+
+public class LGElevatorFactory extends ElevatorFactory{
+	private static LGElevatorFactory factory;
+	
+	private LGElevatorFactory() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static ElevatorFactory getInstance()
+	{
+		if(factory==null)
+		{
+			factory = new LGElevatorFactory();
+		}
+		return factory;
+	}
+	
+	@Override
+	public Motor createMotor() {
+		// TODO Auto-generated method stub
+		return new LGMotor();
+	}
+
+	@Override
+	public Door createDoor() {
+		// TODO Auto-generated method stub
+		return new LGDoor();
+	}
+
+}

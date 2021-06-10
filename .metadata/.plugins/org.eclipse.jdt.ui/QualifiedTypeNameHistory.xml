@@ -58,6 +58,6 @@
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ElevatorScheduler"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.SchedulerFactory"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.ElevatorManager"/>
-    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ScheulingStrategyID"/>
     <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.Direction"/>
+    <fullyQualifiedTypeName name="chapter12_팩토리메서드패턴.practice.p03_elevator_after.scheduler_strategy.ScheulingStrategyID"/>
 </qualifiedTypeNameHistroy>

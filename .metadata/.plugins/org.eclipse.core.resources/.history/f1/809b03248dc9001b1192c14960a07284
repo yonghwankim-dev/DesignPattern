@@ -1,0 +1,37 @@
+package chapter13_추상팩토리패턴.practice.p03_door_after2.elevator.factory.samsung;
+
+import chapter13_추상팩토리패턴.ch13_04.Elevator.Motor.Abstract.Motor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.business.samsung.SamsungDoor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.business.samsung.SamsungMotor;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.elevator.door.Abstract.Door;
+import chapter13_추상팩토리패턴.practice.p03_door_after2.elevator.factory.ElevatorFactory;
+
+public class SamsungElevatorFactory extends ElevatorFactory{
+	private static SamsungElevatorFactory factory;
+	
+	private SamsungElevatorFactory() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static ElevatorFactory getInstance()
+	{
+		if(factory==null)
+		{
+			factory = new SamsungElevatorFactory();
+		}
+		return factory;
+	}
+	
+	@Override
+	public Motor createMotor() {
+		// TODO Auto-generated method stub
+		return new SamsungMotor();
+	}
+
+	@Override
+	public Door createDoor() {
+		// TODO Auto-generated method stub
+		return new SamsungDoor();
+	}
+
+}

@@ -1,0 +1,37 @@
+package chapter13_추상팩토리패턴.exercise.ex01.factory;
+
+import chapter13_추상팩토리패턴.ch13_05.PATHFINDER.FastPathFinder;
+import chapter13_추상팩토리패턴.ch13_05.PATHFINDER.PathFinder;
+import chapter13_추상팩토리패턴.ch13_05.SCREEN.HDScreen;
+import chapter13_추상팩토리패턴.ch13_05.SCREEN.Screen;
+import chapter13_추상팩토리패턴.exercise.ex01.gps.ExpensiveGPS;
+import chapter13_추상팩토리패턴.exercise.ex01.gps.GPS;
+import chapter13_추상팩토리패턴.exercise.ex01.map.LargeMap;
+import chapter13_추상팩토리패턴.exercise.ex01.map.Map;
+
+public class PremiumNaviFactory extends NaviFactory {
+
+	@Override
+	public GPS createGPS() {
+		return new ExpensiveGPS();
+	}
+
+	@Override
+	public Map createMap() {
+		// TODO Auto-generated method stub
+		return new LargeMap();
+	}
+
+	@Override
+	public Screen createScreen() {
+		// TODO Auto-generated method stub
+		return new HDScreen();
+	}
+
+	@Override
+	public PathFinder createPathFinder() {
+		// TODO Auto-generated method stub
+		return new FastPathFinder();
+	}
+
+}
