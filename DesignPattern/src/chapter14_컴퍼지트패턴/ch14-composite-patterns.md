@@ -6,7 +6,7 @@
 
 **컴퍼지트 패턴의 컬레보레이션**
 
-[##_Image|kage@mLMDO/btq67N1A0zP/r9AkZm6dNPULiWg2uosQPK/img.png|alignCenter|data-origin-width="1252" data-origin-height="489" data-ke-mobilestyle="widthOrigin"|컴퍼지트 패턴의 컬레보레이션||_##]
+![컴퍼지트 패턴의 컬레보레이션](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter14_%EC%BB%B4%ED%8D%BC%EC%A7%80%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/04_composite-patterns_collaboration.png)
 
 -   Component : 구체적인 부분, 즉 Leaf 클래스와 전체에 해당하는 Composite 클래스에 공통 인터페이스를 정의한다.
 -   Leaf : 구체적인 부분 클래스로 Composite 객체의 부품으로 설정한다.
@@ -14,7 +14,7 @@
 
 **컴퍼지트 패턴의 순차 다이어그램**
 
-[##_Image|kage@qivIo/btq69WDUzMC/wRiMjKAL2CE8tUpqF9RHCK/img.png|alignCenter|data-origin-width="560" data-origin-height="399" data-ke-mobilestyle="widthOrigin"|컴퍼지트 패턴의 순차 다이어그램||_##]
+![컴퍼지트 패턴의 순차 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter14_%EC%BB%B4%ED%8D%BC%EC%A7%80%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/05_composite-patterns_seq.png)
 
 1.  Client는 Composite 객체에 operation 메서드를 호출한다.
     -   예를 들면 Computer 클래스의 getPrice 메서드에 해당된다.
@@ -29,11 +29,11 @@
 
 **Computer 클래스의 클래스 다이어그램**
 
-[##_Image|kage@djLl0M/btq66uuQGjU/yr0FxxYdLioMYi3jDODk10/img.png|alignCenter|data-origin-width="744" data-origin-height="606" data-ke-mobilestyle="widthOrigin"|Computer 클래스의 클래스 다이어그램||_##]
+![Computer 클래스의 클래스 다이어그램](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter14_%EC%BB%B4%ED%8D%BC%EC%A7%80%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/01_computer.png)
 
 **Computer 클래스의 클래스 다이어그램 기반 구현**
 
-```
+```java
 public class Keyboard {
 	private int price;
 	private int power;
@@ -53,7 +53,7 @@ public class Keyboard {
 }
 ```
 
-```
+```java
 public class Body {
 	private int price;
 	private int power;
@@ -73,7 +73,7 @@ public class Body {
 }
 ```
 
-```
+```java
 public class Monitor {
 	private int price;
 	private int power;
@@ -94,7 +94,7 @@ public class Monitor {
 }
 ```
 
-```
+```java
 public class Computer {
 	private Body body;
 	private Keyboard keyboard;
@@ -136,7 +136,7 @@ public class Computer {
 
 ```
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
@@ -171,11 +171,11 @@ addBody, addKeyboard, addMonitor 메서드는 각각 Computer 클래스의 부�
 
 **Speaker 클래스의 추가**
 
-[##_Image|kage@b4WbwZ/btq66t3PO4W/QGIjy3EJF2tgWnrIuCTHy0/img.png|alignCenter|data-origin-width="386" data-origin-height="386" data-ke-mobilestyle="widthOrigin"|Speaker 클래스의 추가||_##]
+![Speaker 클래스의 추가](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter14_%EC%BB%B4%ED%8D%BC%EC%A7%80%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/02_addSpeaker.png)
 
 **Speaker 클래스의 코드**
 
-```
+```java
 public class Speaker {
 	private int price;
 	private int power;
@@ -198,7 +198,7 @@ public class Speaker {
 
 **수정된 Computer 클래스 코드**
 
-```
+```java
 public class Computer {
 	private Body body;
 	private Keyboard keyboard;
@@ -263,7 +263,7 @@ Speaker 클래스가 추가로 인하여 Computer 클래스의 필드 및 메소
 
 **일반화된 부품을 갖도록 개선한 Computer 클래스 설계**
 
-[##_Image|kage@5OrmF/btq651zHdZg/xtRxWWtkQ6j8KfMgCE0gD0/img.png|alignCenter|data-origin-width="1182" data-origin-height="468" data-ke-mobilestyle="widthOrigin"|일반화된 부품을 갖도록 개선한 Computer 클래스 설계||_##]
+![일반화된 부품을 갖도록 개선한 Computer 클래스 설계](https://github.com/yonghwankim-dev/DesignPattern/blob/master/DesignPattern/src/chapter14_%EC%BB%B4%ED%8D%BC%EC%A7%80%ED%8A%B8%ED%8C%A8%ED%84%B4/diagram/03_generalization-computer.png)
 
 **클래스 다이어그램의 주요 개선점**
 
@@ -274,14 +274,14 @@ Speaker 클래스가 추가로 인하여 Computer 클래스의 필드 및 메소
 
 **일반화된 부품을 갖도록 개선한 Computer 클래스 설계 구현 코드**
 
-```
+```java
 public abstract class ComputerDevice {
 	public abstract int getPrice();
 	public abstract int getPower();
 }
 ```
 
-```
+```java
 public class Keyboard extends ComputerDevice {
 	private int price;
 	private int power;
@@ -302,7 +302,7 @@ public class Keyboard extends ComputerDevice {
 }
 ```
 
-```
+```java
 public class Monitor extends ComputerDevice{
 	private int price;
 	private int power;
@@ -323,7 +323,7 @@ public class Monitor extends ComputerDevice{
 }
 ```
 
-```
+```java
 public class Body extends ComputerDevice {
 	private int price;
 	private int power;
@@ -344,7 +344,7 @@ public class Body extends ComputerDevice {
 }
 ```
 
-```
+```java
 public class Computer {
 	// 복수개의 ComputerDevice 객체를 가리킴
 	private List<ComputerDevice> components = new ArrayList<ComputerDevice>();
@@ -390,7 +390,7 @@ public class Computer {
 
 -   List<ComputerDevice> components 필드 : 복수 개의 ComputerDevice를 가리키려고 정의했다. addComponent 메서드를 통해 ComputerDevice의 구체적인 부품인 Keyboard, Body, Monitor 객체 등을 Computer 클래스의 부품으로 설정할 수 있다.
 
-```
+```java
 public class Client {
 
 	public static void main(String[] args) {
